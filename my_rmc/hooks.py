@@ -4,7 +4,7 @@ app_publisher = "erptechin"
 app_description = "My Rmc App"
 app_email = "erptechin@gmail.com"
 app_license = "mit"
-required_apps = ["frappe","erpnext","hrm","payments","india_compliance"]
+required_apps = ["frappe","erpnext","hrms","payments","india_compliance"]
 
 # Apps
 # ------------------
