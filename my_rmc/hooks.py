@@ -4,23 +4,13 @@ app_publisher = "erptechin"
 app_description = "My Rmc App"
 app_email = "erptechin@gmail.com"
 app_license = "mit"
-required_apps = ["frappe,erpnext,hrm,payments,india_compliance"]
+required_apps = ["frappe","erpnext","hrm","payments","india_compliance"]
 
 # Apps
 # ------------------
 
 # required_apps = []
 
-# Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "my_rmc",
-# 		"logo": "/assets/my_rmc/logo.png",
-# 		"title": "My Rmc",
-# 		"route": "/my_rmc",
-# 		"has_permission": "my_rmc.api.permission.has_app_permission"
-# 	}
-# ]
 
 # Includes in <head>
 # ------------------
