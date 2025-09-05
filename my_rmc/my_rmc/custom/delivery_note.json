@@ -3931,7 +3931,7 @@
    "doc_type": "Delivery Note",
    "docstatus": 0,
    "doctype_or_field": "DocType",
-   
+   "field_name": null,
    "idx": 0,
    "is_system_generated": 1,
    "modified": "2025-07-09 12:05:11.340856",
@@ -3954,7 +3954,7 @@
    "doc_type": "Delivery Note",
    "docstatus": 0,
    "doctype_or_field": "DocType",
-   
+   "field_name": null,
    "idx": 0,
    "is_system_generated": 0,
    "modified": "2025-07-09 15:39:33.088792",
@@ -3977,7 +3977,7 @@
    "doc_type": "Delivery Note",
    "docstatus": 0,
    "doctype_or_field": "DocType",
-   
+   "field_name": null,
    "idx": 0,
    "is_system_generated": 0,
    "modified": "2025-07-09 12:05:11.422342",
@@ -4000,7 +4000,7 @@
    "doc_type": "Delivery Note",
    "docstatus": 0,
    "doctype_or_field": "DocType",
-   
+   "field_name": null,
    "idx": 0,
    "is_system_generated": 1,
    "modified": "2025-07-09 12:05:11.461877",

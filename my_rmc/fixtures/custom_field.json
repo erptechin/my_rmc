@@ -2,11 +2,164 @@
     {
         "dt": "Employee",
         "doctype": "Custom Field",
+        "fieldname": "custom_section_break_branch",
+        "fieldtype": "Section Break",
+        "insert_after": "company_details_section",
+        "label": "Branch Information",
+        "name": "Employee-custom_section_break_branch"
+    },
+    {
+        "dt": "Employee",
+        "doctype": "Custom Field",
         "fieldname": "custom_branches",
         "fieldtype": "Table",
         "insert_after": "custom_section_break_branch",
         "label": "Branchs",
         "name": "Employee-custom_branches",
         "options": "Branches"
+    },
+    {
+        "dt": "Employee",
+        "doctype": "Custom Field",
+        "fieldname": "custom_section_break_branch1",
+        "fieldtype": "Section Break",
+        "insert_after": "custom_branches",
+        "name": "Employee-custom_section_break_branch1"
+    },
+    {
+        "dt": "Employee",
+        "doctype": "Property Setter",
+        "doctype_or_field": "DocField",
+        "doc_type": "Employee",
+        "fieldname": "branch",
+        "property": "hidden",
+        "value": "1",
+        "name": "Employee-branch-hidden"
+    },
+    {
+        "dt": "Item",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Item-custom_branch"
+    },
+    {
+        "dt": "Supplier",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Supplier-custom_branch"
+    },
+    {
+        "dt": "Purchase Order",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Purchase Order-custom_branch"
+    },
+    {
+        "dt": "Purchase Receipt",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Purchase Receipt-custom_branch"
+    },
+    {
+        "dt": "Purchase Invoice",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Purchase Invoice-custom_branch"
+    },
+    {
+        "dt": "Customer",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Customer-custom_branch"
+    },
+    {
+        "dt": "Address",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Address-custom_branch"
+    },
+    {
+        "dt": "BOM",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "BOM-custom_branch"
+    },
+    {
+        "dt": "Sales Order",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Sales Order-custom_branch"
+    },
+    {
+        "dt": "Delivery Note",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Delivery Note-custom_branch"
+    },
+    {
+        "dt": "Batch",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Batch-custom_branch"
+    },
+    {
+        "dt": "Sales Invoice",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Sales Invoice-custom_branch"
+    },
+    {
+        "dt": "Vehicle",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Vehicle-custom_branch"
+    },
+    {
+        "dt": "Driver",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branch",
+        "fieldtype": "Link",
+        "label": "Branch",
+        "options": "Branch",
+        "name": "Driver-custom_branch"
     }
 ]
