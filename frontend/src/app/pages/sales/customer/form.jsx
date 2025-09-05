@@ -6,7 +6,6 @@ import { useThemeContext } from "app/contexts/theme/context";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller, useForm, useWatch } from "react-hook-form";
 import { DocumentPlusIcon } from "@heroicons/react/24/outline";
-import { SearchSelect } from "app/components/form/SearchSelect";
 
 // Local Imports
 import { Schema } from "app/components/form/schema";
@@ -18,8 +17,13 @@ import { useInfo, useAddData, useFeachSingle, useUpdateData } from "hooks/useApi
 
 const pageName = "Customer List"
 const doctype = "Customer"
-const fields = ['customer_name', 'customer_type', 'gstin', 'pan']
-const subFields = ['customer_primary_address', 'customer_site_addresses']
+const fields = ['customer_name', 'customer_type', 'customer_site_addresses']
+const subFields = ['gstin', 'pan', 'customer_primary_address']
+
+const tableFields = {
+  "customer_site_addresses": { "title": true, "address": true },
+  "ignorFields": {}
+}
 
 // ----------------------------------------------------------------------
 
@@ -189,6 +193,7 @@ export default function AddEditFrom() {
                     infos={info}
                     fields={fields}
                     register={register}
+                    tables={tableFields}
                     control={control}
                     errors={errors}
                   />
@@ -196,38 +201,17 @@ export default function AddEditFrom() {
               </Card>
             </div>
             <div className="col-span-12 space-y-4 sm:space-y-5 lg:col-span-4 lg:space-y-6">
-              <Card className="space-y-5 p-4 sm:px-5">
-                <Controller
-                  render={({ field: { onChange, value, ...rest } }) => {
-                    return <SearchSelect
-                      onChange={onChange}
-                      value={value}
-                      label={'Customer Primary Address'}
-                      lists={address}
-                      placeholder={`Customer Primary Address`}
-                      error={errors['customer_primary_address']?.message}
-                      {...rest}
-                    />
-                  }}
+              <Card className="p-4 sm:px-5">
+                <DynamicForms
+                  infos={info}
+                  tables={tableFields}
+                  fields={subFields}
+                  register={register}
                   control={control}
-                  name={'customer_primary_address'}
-                  {...register('customer_primary_address')}
+                  errors={errors}
                 />
               </Card>
             </div>
-          </div>
-          
-          {/* Customer Site Addresses Child Table */}
-          <div className="mt-6">
-            <Card className="p-4 sm:px-5">
-              <DynamicForms
-                infos={info}
-                fields={['customer_site_addresses']}
-                register={register}
-                control={control}
-                errors={errors}
-              />
-            </Card>
           </div>
         </form>
       </div>
