@@ -46,7 +46,7 @@ export default function SignIn() {
     <main className="min-h-100vh flex">
       <div className="fixed top-0 hidden p-6 lg:block lg:px-12">
         <div className="flex items-center gap-2">
-          <img src={"/assets/erptech_rcm/images/logo.png"} alt="" className="w-30" />
+          <img src={"/assets/my_rmc/images/logo.png"} alt="" className="w-30" />
         </div>
       </div>
       <div className="hidden w-full place-items-center lg:grid">
@@ -67,7 +67,7 @@ export default function SignIn() {
       <div className="flex w-full flex-col items-center ltr:border-l rtl:border-r border-gray-150 bg-white dark:border-transparent dark:bg-dark-700 lg:max-w-md">
         <div className="flex w-full max-w-sm grow flex-col justify-center p-5">
           <div className="text-center">
-            <img src={"/assets/erptech_rcm/images/logo.png"} alt="" className="w-30 mx-auto lg:hidden" />
+            <img src={"/assets/my_rmc/images/logo.png"} alt="" className="w-30 mx-auto lg:hidden" />
             <div className="mt-4 lg:mt-0">
               <h2 className="text-2xl font-semibold text-gray-600 dark:text-dark-100">
                 Welcome Back

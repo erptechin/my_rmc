@@ -22,27 +22,27 @@ const languages = [
   {
     id: 1,
     name: "English",
-    flagUrl: "/assets/erptech_rcm/images/flags/svg/rounded/united-kingdom.svg",
+    flagUrl: "/assets/my_rmc/images/flags/svg/rounded/united-kingdom.svg",
   },
   {
     id: 2,
     name: "Spanish",
-    flagUrl: "/assets/erptech_rcm/images/flags/svg/rounded/spain.svg",
+    flagUrl: "/assets/my_rmc/images/flags/svg/rounded/spain.svg",
   },
   {
     id: 3,
     name: "Russian",
-    flagUrl: "/assets/erptech_rcm/images/flags/svg/rounded/russia.svg",
+    flagUrl: "/assets/my_rmc/images/flags/svg/rounded/russia.svg",
   },
   {
     id: 4,
     name: "Japanese",
-    flagUrl: "/assets/erptech_rcm/images/flags/svg/rounded/japan.svg",
+    flagUrl: "/assets/my_rmc/images/flags/svg/rounded/japan.svg",
   },
   {
     id: 5,
     name: "Chinese",
-    flagUrl: "/assets/erptech_rcm/images/flags/svg/rounded/china.svg",
+    flagUrl: "/assets/my_rmc/images/flags/svg/rounded/china.svg",
   },
 ];
 

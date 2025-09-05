@@ -252,7 +252,7 @@ export default function AddEditFrom() {
     })
     if (listData?.data?.length > 0) {
       await getCustomData({
-        url: `erptech_rcm.api.doctype.delete_data?doctype=${doctype}&ids=${JSON.stringify(listData?.data.map(item => item.name))}`
+        url: `my_rmc.api.doctype.delete_data?doctype=${doctype}&ids=${JSON.stringify(listData?.data.map(item => item.name))}`
       });
     }
 
@@ -363,7 +363,7 @@ export default function AddEditFrom() {
   const onSubmit = async (formData) => {
     if (id) {
       const response = await getCustomData({
-        url: `erptech_rcm.api.doctype.update_data?doctype=${doctype}&name=${id}&update_fields=${JSON.stringify([{ 'docstatus': 0 }])}`
+        url: `my_rmc.api.doctype.update_data?doctype=${doctype}&name=${id}&update_fields=${JSON.stringify([{ 'docstatus': 0 }])}`
       });
       if (response.success) {
         delete formData.creation

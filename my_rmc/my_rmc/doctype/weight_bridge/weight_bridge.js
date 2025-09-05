@@ -108,7 +108,7 @@ frappe.ui.form.on("Weight Bridge", {
             if (purchaseOrder?.message) {
                 frm.set_value('supplier_name', purchaseOrder?.message.supplier_name);
                 frappe.call({
-                    method: 'erptech_rcm.api.custom.get_child_items',
+                    method: 'my_rmc.api.custom.get_child_items',
                     args: {
                         parent: "Purchase Order",
                         child: "Purchase Order Item",
@@ -135,7 +135,7 @@ frappe.ui.form.on("Weight Bridge", {
                 frm.set_value('vehicle', deliveryNote?.message.custom_vehicle);
             }
             frappe.call({
-                method: 'erptech_rcm.api.custom.get_child_items',
+                method: 'my_rmc.api.custom.get_child_items',
                 args: {
                     parent: "Delivery Note",
                     child: "Delivery Note Item",

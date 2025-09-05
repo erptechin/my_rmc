@@ -15,7 +15,7 @@ export function Header() {
     <header className="relative flex h-[61px] shrink-0 items-center justify-between ltr:pl-6 ltr:pr-3 rtl:pl-3 rtl:pr-6">
       <div className="flex items-center justify-start gap-4 pt-3">
         <Link to="/">
-          <img src={"/assets/erptech_rcm/images/fav.png"} alt="" className="size-10 text-primary-600 dark:text-primary-400" />
+          <img src={"/assets/my_rmc/images/fav.png"} alt="" className="size-10 text-primary-600 dark:text-primary-400" />
         </Link>
         <LogoType className="h-5 w-auto text-gray-800 dark:text-dark-50" />
       </div>

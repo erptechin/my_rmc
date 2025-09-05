@@ -25,7 +25,7 @@ export function MainPanel({ nav, setActiveSegment, activeSegment }) {
         {/* Application Logo */}
         <div className="flex pt-3.5">
           <Link to="/">
-            <img src={"/assets/erptech_rcm/images/fav.png"} alt="" className="size-10 text-primary-600 dark:text-primary-400" />
+            <img src={"/assets/my_rmc/images/fav.png"} alt="" className="size-10 text-primary-600 dark:text-primary-400" />
           </Link>
         </div>
 

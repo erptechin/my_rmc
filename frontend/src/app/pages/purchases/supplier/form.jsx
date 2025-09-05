@@ -81,7 +81,7 @@ export default function AddEditFrom() {
     const fetchGSTInfo = async () => {
       if (gstin && gstin.length >= 15) {
         try {
-          const response = await getCustomData({ url: `erptech_rcm.api.custom.gst_info?keyword=${gstin}` });
+          const response = await getCustomData({ url: `my_rmc.api.custom.gst_info?keyword=${gstin}` });
           if (response) {
             const json = JSON.parse(response);
             const pan = gstin.slice(2, 12);

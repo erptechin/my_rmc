@@ -74,7 +74,7 @@ export default function AddEditFrom() {
         try {
           // Fetch sites for the selected customer
           const response = await getCustomData({
-            url: `erptech_rcm.api.custom.get_customer_address?customer_name=${customer}`
+            url: `my_rmc.api.custom.get_customer_address?customer_name=${customer}`
           });
 
           if (response) {
@@ -123,7 +123,7 @@ export default function AddEditFrom() {
   const onSubmit = async (formData) => {
     if (id) {
       const response = await getCustomData({
-        url: `erptech_rcm.api.doctype.update_data?doctype=${doctype}&name=${id}&update_fields=${JSON.stringify([{ 'docstatus': 0 }])}`
+        url: `my_rmc.api.doctype.update_data?doctype=${doctype}&name=${id}&update_fields=${JSON.stringify([{ 'docstatus': 0 }])}`
       });
       if (response.success) {
         delete formData.creation

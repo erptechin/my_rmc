@@ -11,7 +11,7 @@ export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   // Set base path dynamically
-  const base = command === 'serve' ? '/' : '/assets/erptech_rcm/dist/';
+  const base = command === 'serve' ? '/' : '/assets/my_rmc/dist/';
 
   return {
     base,

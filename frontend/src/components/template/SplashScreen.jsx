@@ -7,7 +7,7 @@ export function SplashScreen() {
   return (
     <>
       <div className="fixed grid h-full w-full place-content-center">
-        <img src={"/assets/erptech_rcm/images/logo.png"} alt="" className="w-30" />
+        <img src={"/assets/my_rmc/images/logo.png"} alt="" className="w-30" />
         <Progress
           color="primary"
           isIndeterminate

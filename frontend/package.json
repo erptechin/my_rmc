@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && yarn copy-html-entry",
-    "copy-html-entry": "cp -r dist ../erptech_rcm/public && cp -r ../erptech_rcm/public/dist/index.html ../erptech_rcm/www/rmc.html && rm -r ../erptech_rcm/public/dist/index.html",
+    "copy-html-entry": "cp -r dist ../my_rmc/public && cp -r ../my_rmc/public/dist/index.html ../my_rmc/www/rmc.html && rm -r ../my_rmc/public/dist/index.html",
     "lint": "eslint .",
     "preview": "vite preview"
   },
