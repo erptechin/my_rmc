@@ -1,0 +1,124 @@
+:root {
+  --primary: #7d92de;
+  --main-bg-color: #D5E6FB;
+  --btn-primary: #7d92de;
+  --btn-primary1: #7d92de;
+  --gradient-1: #a6c0ef;
+  --gradient-2: #6190EA;
+  --footer-bg: #a27a00;
+  --white: #ffffff;
+  --black: #000;
+  --link-hover: #01a9e0;
+  --input-base-shadow: inset 0 0 0 .5px #ededed, 0 1.5px 0 -.5px #c7c7c7;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gradient-2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--link-hover);
+  border-radius: 3px;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  background: var(--main-bg-color) !important;
+}
+
+/* Login */
+body[data-path="login"] {
+  display: table;
+}
+
+[data-path="login"] nav {
+  display: none;
+}
+
+#page-login {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#page-login .loginbox {
+  background-color: var(--white);
+  display: flex;
+  max-width: 800px;
+  min-height: 500px;
+  width: 100%;
+  margin: 1.875rem auto;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#page-login .loginbox .login-left {
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  display: flex;
+  background: var(--primary);
+  border-radius: 6px 0 0 6px;
+  padding: 80px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(/assets/my_rmc/images/login-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page-login .loginbox .login-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#page-login .loginbox .login-left .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+#page-login .loginbox .login-right {
+  padding: 40px;
+  width: 400px;
+}
+
+#page-login .page-card {
+  background-color: transparent;
+  border: none;
+}
+
+#page-login .loginbox .login-right h1 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#page-login .btn.btn-primary {
+  padding: 8px 8px;
+  background-color: var(--btn-primary1);
+  border: 1px solid var(--btn-primary1);
+}
+
+.footer.footer-one {
+  display: none !important;
+}

@@ -1,0 +1,575 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-01 17:10:11.788519",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "delivery_note",
+  "batch_no",
+  "batch_index",
+  "column_break_onam",
+  "bom_no",
+  "recipe_name",
+  "column_break_koii",
+  "customer",
+  "site",
+  "section_break_xlcs",
+  "agg1_name_dtl",
+  "agg1_qty_stwt_dtl",
+  "agg1_qty_atwt_dtl",
+  "agg1_qty_moi_dtl",
+  "agg2_name_dtl",
+  "agg2_qty_stwt_dtl",
+  "agg2_qty_atwt_dtl",
+  "agg2_qty_moi_dtl",
+  "agg3_name_dtl",
+  "agg3_qty_stwt_dtl",
+  "agg3_qty_atwt_dtl",
+  "agg3_qty_moi_dtl",
+  "agg4_name_dtl",
+  "agg4_qty_stwt_dtl",
+  "agg4_qty_atwt_dtl",
+  "agg4_qty_moi_dtl",
+  "agg5_name_dtl",
+  "agg5_qty_stwt_dtl",
+  "agg5_qty_atwt_dtl",
+  "agg5_qty_moi_dtl",
+  "agg6_name_dtl",
+  "agg6_qty_stwt_dtl",
+  "agg6_qty_atwt_dtl",
+  "agg6_qty_moi_dtl",
+  "column_break_nron",
+  "cem1_name_dtl",
+  "cem1_qty_stwt_dtl",
+  "cem1_qty_atwt_dtl",
+  "cem1_qty_corr_dtl",
+  "cem2_name_dtl",
+  "cem2_qty_stwt_dtl",
+  "cem2_qty_atwt_dtl",
+  "cem2_qty_corr_dtl",
+  "cem3_name_dtl",
+  "cem3_qty_stwt_dtl",
+  "cem3_qty_atwt_dtl",
+  "cem3_qty_corr_dtl",
+  "cem4_name_dtl",
+  "cem4_qty_stwt_dtl",
+  "cem4_qty_atwt_dtl",
+  "cem4_qty_corr_dtl",
+  "cem5_name_dtl",
+  "cem5_qty_stwt_dtl",
+  "cem5_qty_atwt_dtl",
+  "cem5_qty_corr_dtl",
+  "sil_name_dtl",
+  "sil1_qty_stwt_dtl",
+  "sil1_qty_atwt_dtl",
+  "sil1_qty_corr_dtl",
+  "column_break_mlpf",
+  "adm1_name_dtl",
+  "adm1_qty_stwt_dtl",
+  "adm1_qty_atwt_dtl",
+  "adm1_qty_corr_dtl",
+  "adm2_name_dtl",
+  "adm2_qty_stwt_dtl",
+  "adm2_qty_atwt_dtl",
+  "adm2_qty_corr_dtl",
+  "adm3_name_dtl",
+  "adm3_qty_stwt_dtl",
+  "adm3_qty_atwt_dtl",
+  "adm3_qty_corr_dtl",
+  "adm4_name_dtl",
+  "adm4_qty_stwt_dtl",
+  "adm4_qty_atwt_dtl",
+  "adm4_qty_corr_dtl",
+  "column_break_kvcx",
+  "wtr1_name_dtl",
+  "wtr1_qty_stwt_dtl",
+  "wtr1_qty_atwt_dtl",
+  "wtr1_qty_corr_dtl",
+  "wtr2_name_dtl",
+  "wtr2_qty_stwt_dtl",
+  "wtr2_qty_atwt_dtl",
+  "wtr2_qty_corr_dtl",
+  "wtr3_name_dtl",
+  "wtr3_qty_stwt_dtl",
+  "wtr3_qty_atwt_dtl",
+  "wtr3_qty_corr_dtl"
+ ],
+ "fields": [
+  {
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No"
+  },
+  {
+   "fieldname": "batch_index",
+   "fieldtype": "Data",
+   "label": "Batch Index"
+  },
+  {
+   "fieldname": "column_break_onam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bom_no",
+   "fieldtype": "Link",
+   "label": "BOM No",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "recipe_name",
+   "fieldtype": "Data",
+   "label": "Recipe Name"
+  },
+  {
+   "fieldname": "column_break_koii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Address"
+  },
+  {
+   "fieldname": "section_break_xlcs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agg1_name_dtl",
+   "fieldtype": "Link",
+   "label": "Agg1_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg1_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg1_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "agg1_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg1_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "agg1_qty_moi_dtl",
+   "fieldtype": "Float",
+   "label": "Agg1_Qty_Moi_Dtl"
+  },
+  {
+   "fieldname": "agg2_name_dtl",
+   "fieldtype": "Link",
+   "label": "Agg2_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg2_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg2_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "agg2_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg2_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "agg2_qty_moi_dtl",
+   "fieldtype": "Float",
+   "label": "Agg2_Qty_Moi_Dtl"
+  },
+  {
+   "fieldname": "agg3_name_dtl",
+   "fieldtype": "Link",
+   "label": "Agg3_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg3_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg3_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "agg3_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg3_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "agg3_qty_moi_dtl",
+   "fieldtype": "Float",
+   "label": "Agg3_Qty_Moi_Dtl"
+  },
+  {
+   "fieldname": "agg4_name_dtl",
+   "fieldtype": "Link",
+   "label": "Agg4_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg4_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg4_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "agg4_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg4_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "agg4_qty_moi_dtl",
+   "fieldtype": "Float",
+   "label": "Agg4_Qty_Moi_Dtl"
+  },
+  {
+   "fieldname": "agg5_name_dtl",
+   "fieldtype": "Link",
+   "label": "Agg5_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg5_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg5_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "agg5_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg5_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "agg5_qty_moi_dtl",
+   "fieldtype": "Float",
+   "label": "Agg5_Qty_Moi_Dtl"
+  },
+  {
+   "fieldname": "agg6_name_dtl",
+   "fieldtype": "Link",
+   "label": "Agg6_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg6_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg6_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "agg6_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Agg6_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "agg6_qty_moi_dtl",
+   "fieldtype": "Float",
+   "label": "Agg6_Qty_Moi_Dtl"
+  },
+  {
+   "fieldname": "column_break_nron",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cem1_name_dtl",
+   "fieldtype": "Link",
+   "label": "Cem1_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem1_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem1_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "cem1_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem1_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "cem1_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Cem1_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "cem2_name_dtl",
+   "fieldtype": "Link",
+   "label": "Cem2_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem2_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem2_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "cem2_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem2_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "cem2_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Cem2_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "cem3_name_dtl",
+   "fieldtype": "Link",
+   "label": "Cem3_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem3_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem3_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "cem3_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem3_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "cem3_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Cem3_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "cem4_name_dtl",
+   "fieldtype": "Link",
+   "label": "Cem4_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem4_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem4_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "cem4_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem4_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "cem4_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Cem4_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "cem5_name_dtl",
+   "fieldtype": "Link",
+   "label": "Cem5_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem5_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem5_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "cem5_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Cem5_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "cem5_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Cem5_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "sil_name_dtl",
+   "fieldtype": "Link",
+   "label": "Sil_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "sil1_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Sil1_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "sil1_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Sil1_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "sil1_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Sil1_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "column_break_mlpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adm1_name_dtl",
+   "fieldtype": "Link",
+   "label": "Adm1_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm1_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm1_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "adm1_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm1_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "adm1_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Adm1_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "adm2_name_dtl",
+   "fieldtype": "Link",
+   "label": "Adm2_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm2_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm2_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "adm2_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm2_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "adm2_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Adm2_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "adm3_name_dtl",
+   "fieldtype": "Link",
+   "label": "Adm3_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm3_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm3_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "adm3_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm3_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "adm3_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Adm3_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "adm4_name_dtl",
+   "fieldtype": "Link",
+   "label": "Adm4_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm4_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm4_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "adm4_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Adm4_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "adm4_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Adm4_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "column_break_kvcx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wtr1_name_dtl",
+   "fieldtype": "Link",
+   "label": "Wtr1_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr1_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr1_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "wtr1_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr1_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "wtr1_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr1_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "wtr2_name_dtl",
+   "fieldtype": "Link",
+   "label": "Wtr2_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr2_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr2_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "wtr2_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr2_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "wtr2_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr2_Qty_Corr_Dtl"
+  },
+  {
+   "fieldname": "wtr3_name_dtl",
+   "fieldtype": "Link",
+   "label": "Wtr3_Name_Dtl",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr3_qty_stwt_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr3_Qty_Stwt_Dtl"
+  },
+  {
+   "fieldname": "wtr3_qty_atwt_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr3_Qty_Atwt_Dtl"
+  },
+  {
+   "fieldname": "wtr3_qty_corr_dtl",
+   "fieldtype": "Float",
+   "label": "Wtr3_Qty_Corr_Dtl"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-01 17:43:32.926377",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "BOM Batch Dtl",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

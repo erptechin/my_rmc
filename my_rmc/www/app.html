@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html data-theme-mode="{{ desk_theme.lower() }}" data-theme="{{ desk_theme.lower() }}" dir={{ layout_direction }} lang="{{ lang }}">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#0089FF">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#0089FF">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#0089FF">
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,
+			maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="white">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>{{ app_name }}</title>
+		<link rel="shortcut icon"
+			href="{{ favicon or "/assets/frappe/images/frappe-favicon.svg" }}" type="image/x-icon">
+		<link rel="icon"
+			href="{{ favicon or "/assets/frappe/images/frappe-favicon.svg" }}" type="image/x-icon">
+		{% for include in include_css -%}
+		{{ include_style(include) }}
+		{%- endfor -%}
+	</head>
+	<body>
+		{% include "templates/includes/splash_screen.html" %}
+		<div
+    class="razor background min-h-screen before:content-['']  before:from-slate-100 before:to-slate-50 before:h-screen before:w-full before:fixed before:top-0 after:content-[''] after:fixed after:inset-0">
+    <div class="h-screen relative loading-page [&.loading-page--before-hide]:before:block [&.loading-page--hide]:before:opacity-0 before:content-[''] before:transition-opacity before:duration-300 before:hidden before:inset-0 before:h-screen before:w-screen before:fixed before:z-[60] [&.loading-page--before-hide]:after:block [&.loading-page--hide]:after:opacity-0 after:content-[''] after:transition-opacity after:duration-300 after:hidden after:h-16 after:w-16 after:animate-pulse after:fixed after:opacity-50 after:inset-0 after:m-auto after:bg-loading-puff after:bg-cover after:z-[61]"
+        id="app_view">
+		<div id="nxt_sidebar"
+            class="xl:ml-0 shadow-xl transition-[margin] duration-300 xl:shadow-none fixed top-0 left-0 z-50 side-menu group inset-y-0 after:content-[``] after:fixed after:inset-0 after:bg-black/80 after:xl:hidden [&.side-menu--mobile-menu-open]:ml-0 [&.side-menu--mobile-menu-open]:after:block -ml-[275px] after:hidden">
+			<div class="close-mobile-menu fixed ml-[275px] w-10 h-10 items-center justify-center sm:hidden z-50 [&.close-mobile-menu--mobile-menu-open]:flex">
+				<a class="mt-5 ml-5" href="">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" data-tw-merge="" class="lucide lucide-x stroke-[1] w-8 h-8 text-white"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+				</a>
+			</div>
+			{% include "templates/includes/nabar.html" %}
+			{% include "templates/includes/header.html" %}
+			</div>
+		<div class="content transition-[margin,width] duration-100 xl:pl-3.5 pt-[65px] pb-16 relative z-10 xl:ml-[275px] [&.content--compact]:xl:ml-[91px] main_bg">
+		<div class="mt-5">
+			<div id="body"></div>
+			<footer></footer>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div id="all-symbols" style="display:none"></div>
+		<div id="build-events-overlay"></div>
+
+		<script type="text/javascript">
+			window._version_number = "{{ build_version }}";
+			// browser support
+			window.app = true;
+			window.dev_server = {{ dev_server }};
+
+			if (!window.frappe) window.frappe = {};
+
+			frappe.boot = JSON.parse({{ boot }});
+			frappe._messages = frappe.boot["__messages"];
+			frappe.csrf_token = "{{ csrf_token }}";
+
+
+			{%- for path in include_icons -%}
+			fetch(`/assets/{{ path }}?v=${window._version_number}`, { credentials: "same-origin" })
+				.then((r) => r.text())
+				.then((svg) => {
+					let svg_container = document.getElementById("all-symbols");
+					svg_container.insertAdjacentHTML("beforeend", svg);
+				});
+			{%- endfor -%}
+		</script>
+
+	{% for include in include_js %}
+	{{ include_script(include) }}
+	{% endfor %}
+
+	{% include "templates/includes/app_analytics/google_analytics.html" %}
+
+		{% for sound in (sounds or []) %}
+		<audio preload="auto" id="sound-{{ sound.name }}" volume={{ sound.volume or 1 }}>
+			<source src="{{ sound.src }}"></source>
+		</audio>
+		{% endfor %}
+	</body>
+</html>

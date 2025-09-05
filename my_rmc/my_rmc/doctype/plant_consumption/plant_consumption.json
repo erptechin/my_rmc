@@ -1,0 +1,166 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-28 00:07:34.108150",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "addinfo23",
+  "timestamp",
+  "timestamp_utc",
+  "plant_address_val0",
+  "plant_no_val0",
+  "deliery_no_val0",
+  "column_break_gbbw",
+  "customer_name_val0",
+  "customer_address_val0",
+  "site_name_val0",
+  "site_address_val0",
+  "tm_no_val0",
+  "driver_name_val0",
+  "column_break_bvqo",
+  "order_qty_val0",
+  "pro_qty_val0",
+  "recipe_grade_val0",
+  "recipe_name_val0",
+  "recipe_density_val0",
+  "batching_plant",
+  "section_break_stqx",
+  "table_hbmh"
+ ],
+ "fields": [
+  {
+   "fieldname": "timestamp_utc",
+   "fieldtype": "Datetime",
+   "label": "timestamp_utc"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "timestamp"
+  },
+  {
+   "fieldname": "column_break_bvqo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gbbw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name_val0",
+   "fieldtype": "Link",
+   "label": "CUSTOMER_NAME_VAL0",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site_name_val0",
+   "fieldtype": "Data",
+   "label": "SITE_NAME_VAL0"
+  },
+  {
+   "fieldname": "recipe_grade_val0",
+   "fieldtype": "Data",
+   "label": "RECIPE_GRADE_VAL0"
+  },
+  {
+   "fieldname": "tm_no_val0",
+   "fieldtype": "Data",
+   "label": "TM_NO_VAL0"
+  },
+  {
+   "fieldname": "driver_name_val0",
+   "fieldtype": "Data",
+   "label": "DRIVER_NAME_VAL0"
+  },
+  {
+   "fieldname": "order_qty_val0",
+   "fieldtype": "Float",
+   "label": "ORDER_QTY_VAL0"
+  },
+  {
+   "fieldname": "pro_qty_val0",
+   "fieldtype": "Float",
+   "label": "PRO_QTY_VAL0"
+  },
+  {
+   "fieldname": "recipe_name_val0",
+   "fieldtype": "Data",
+   "label": "RECIPE_NAME_VAL0"
+  },
+  {
+   "fieldname": "recipe_density_val0",
+   "fieldtype": "Data",
+   "label": "RECIPE_DENSITY_VAL0"
+  },
+  {
+   "fieldname": "site_address_val0",
+   "fieldtype": "Data",
+   "label": "SITE_ADDRESS_VAL0"
+  },
+  {
+   "fieldname": "plant_address_val0",
+   "fieldtype": "Data",
+   "label": "PLANT_ADDRESS_VAL0"
+  },
+  {
+   "fieldname": "plant_no_val0",
+   "fieldtype": "Data",
+   "label": "PLANT_NO_VAL0"
+  },
+  {
+   "fieldname": "customer_address_val0",
+   "fieldtype": "Data",
+   "label": "CUSTOMER_ADDRESS_VAL0"
+  },
+  {
+   "fieldname": "deliery_no_val0",
+   "fieldtype": "Data",
+   "label": "DELIERY_NO_VAL0"
+  },
+  {
+   "fieldname": "addinfo23",
+   "fieldtype": "Data",
+   "label": "AddInfo23"
+  },
+  {
+   "fieldname": "batching_plant",
+   "fieldtype": "Link",
+   "label": "Batching Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_stqx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_hbmh",
+   "fieldtype": "Table",
+   "options": "Plant Consumption Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-12 13:07:43.198371",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Plant Consumption",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

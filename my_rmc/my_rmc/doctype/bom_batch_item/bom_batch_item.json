@@ -1,0 +1,336 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-12 00:08:35.427150",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "delivery_note",
+  "batch_no",
+  "customer",
+  "column_break_axyi",
+  "bom_no",
+  "recipe_name",
+  "site",
+  "section_break_kurt",
+  "agg1_name_rec",
+  "agg1_qty_rec",
+  "agg2_name_rec",
+  "agg2_qty_rec",
+  "agg3_name_rec",
+  "agg3_qty_rec",
+  "agg4_name_rec",
+  "agg4_qty_rec",
+  "agg5_name_rec",
+  "agg5_qty_rec",
+  "agg6_name_rec",
+  "agg6_qty_rec",
+  "column_break_nath",
+  "cem1_name_rec",
+  "cem1_qty_rec",
+  "cem2_name_rec",
+  "cem2_qty_rec",
+  "cem3_name_rec",
+  "cem3_qty_rec",
+  "cem4_name_rec",
+  "cem4_qty_rec",
+  "cem5_name_rec",
+  "cem5_qty_rec",
+  "sil1_name_rec",
+  "sil1_qty_rec",
+  "column_break_fqaz",
+  "adm1_name_rec",
+  "adm1_qty_rec",
+  "adm2_name_rec",
+  "adm2_qty_rec",
+  "adm3_name_rec",
+  "adm3_qty_rec",
+  "adm4_name_rec",
+  "adm4_qty_rec",
+  "column_break_iueq",
+  "wtr1_name_rec",
+  "wtr1_qty_rec",
+  "wtr2_name_rec",
+  "wtr2_qty_rec",
+  "wtr3_name_rec",
+  "wtr3_qty_rec"
+ ],
+ "fields": [
+  {
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "bom_no",
+   "fieldtype": "Link",
+   "label": "BOM No",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No"
+  },
+  {
+   "fieldname": "section_break_kurt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agg1_name_rec",
+   "fieldtype": "Link",
+   "label": "Agg1_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg1_qty_rec",
+   "fieldtype": "Float",
+   "label": "Agg1_Qty_Rec"
+  },
+  {
+   "fieldname": "agg2_name_rec",
+   "fieldtype": "Link",
+   "label": "Agg2_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg2_qty_rec",
+   "fieldtype": "Float",
+   "label": "Agg2_Qty_Rec"
+  },
+  {
+   "fieldname": "agg3_name_rec",
+   "fieldtype": "Link",
+   "label": "Agg3_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg3_qty_rec",
+   "fieldtype": "Float",
+   "label": "Agg3_Qty_Rec"
+  },
+  {
+   "fieldname": "agg4_name_rec",
+   "fieldtype": "Link",
+   "label": "Agg4_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg4_qty_rec",
+   "fieldtype": "Float",
+   "label": "Agg4_Qty_Rec"
+  },
+  {
+   "fieldname": "agg5_name_rec",
+   "fieldtype": "Link",
+   "label": "Agg5_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg5_qty_rec",
+   "fieldtype": "Float",
+   "label": "Agg5_Qty_Rec"
+  },
+  {
+   "fieldname": "agg6_name_rec",
+   "fieldtype": "Link",
+   "label": "Agg6_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg6_qty_rec",
+   "fieldtype": "Float",
+   "label": "Agg6_Qty_Rec"
+  },
+  {
+   "fieldname": "column_break_nath",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cem1_name_rec",
+   "fieldtype": "Link",
+   "label": "Cem1_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem1_qty_rec",
+   "fieldtype": "Float",
+   "label": "Cem1_Qty_Rec"
+  },
+  {
+   "fieldname": "cem2_name_rec",
+   "fieldtype": "Link",
+   "label": "Cem2_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem2_qty_rec",
+   "fieldtype": "Float",
+   "label": "Cem2_Qty_Rec"
+  },
+  {
+   "fieldname": "cem3_name_rec",
+   "fieldtype": "Link",
+   "label": "Cem3_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem3_qty_rec",
+   "fieldtype": "Float",
+   "label": "Cem3_Qty_Rec"
+  },
+  {
+   "fieldname": "cem4_name_rec",
+   "fieldtype": "Link",
+   "label": "Cem4_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem4_qty_rec",
+   "fieldtype": "Float",
+   "label": "Cem4_Qty_Rec"
+  },
+  {
+   "fieldname": "cem5_name_rec",
+   "fieldtype": "Link",
+   "label": "Cem5_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem5_qty_rec",
+   "fieldtype": "Float",
+   "label": "Cem5_Qty_Rec"
+  },
+  {
+   "fieldname": "column_break_fqaz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "adm1_name_rec",
+   "fieldtype": "Link",
+   "label": "Adm1_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm1_qty_rec",
+   "fieldtype": "Float",
+   "label": "Adm1_Qty_Rec"
+  },
+  {
+   "fieldname": "adm2_name_rec",
+   "fieldtype": "Link",
+   "label": "Adm2_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm2_qty_rec",
+   "fieldtype": "Float",
+   "label": "Adm2_Qty_Rec"
+  },
+  {
+   "fieldname": "adm3_name_rec",
+   "fieldtype": "Link",
+   "label": "Adm3_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm3_qty_rec",
+   "fieldtype": "Float",
+   "label": "Adm3_Qty_Rec"
+  },
+  {
+   "fieldname": "adm4_name_rec",
+   "fieldtype": "Link",
+   "label": "Adm4_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm4_qty_rec",
+   "fieldtype": "Float",
+   "label": "Adm4_Qty_Rec"
+  },
+  {
+   "fieldname": "sil1_name_rec",
+   "fieldtype": "Link",
+   "label": "Sil1_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "sil1_qty_rec",
+   "fieldtype": "Float",
+   "label": "Sil1_Qty_Rec"
+  },
+  {
+   "fieldname": "column_break_iueq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "wtr1_name_rec",
+   "fieldtype": "Link",
+   "label": "Wtr1_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr1_qty_rec",
+   "fieldtype": "Float",
+   "label": "Wtr1_Qty_Rec"
+  },
+  {
+   "fieldname": "wtr2_name_rec",
+   "fieldtype": "Link",
+   "label": "Wtr2_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr2_qty_rec",
+   "fieldtype": "Float",
+   "label": "Wtr2_Qty_Rec"
+  },
+  {
+   "fieldname": "wtr3_name_rec",
+   "fieldtype": "Link",
+   "label": "Wtr3_Name_Rec",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr3_qty_rec",
+   "fieldtype": "Float",
+   "label": "Wtr3_Qty_Rec"
+  },
+  {
+   "fieldname": "column_break_axyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recipe_name",
+   "fieldtype": "Data",
+   "label": "Recipe Name"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Address"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-31 22:50:59.588578",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "BOM Batch Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,635 @@
+{
+ "actions": [],
+ "creation": "2024-09-19 20:47:56.003093",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_index",
+  "batch_date",
+  "batch_size",
+  "prod_adj",
+  "prod1_agg_name",
+  "prod1_agg_stwt",
+  "prod1_agg_atwt",
+  "prod1_agg_moi",
+  "prod2_agg_name",
+  "prod2_agg_stwt",
+  "prod2_agg_atwt",
+  "prod2_agg_moi",
+  "prod3_agg_name",
+  "prod3_agg_stwt",
+  "prod3_agg_atwt",
+  "prod3_agg_moi",
+  "prod4_agg_name",
+  "prod4_agg_stwt",
+  "prod4_agg_atwt",
+  "prod4_agg_moi",
+  "prod5_agg_name",
+  "prod5_agg_stwt",
+  "prod5_agg_atwt",
+  "prod5_agg_moi",
+  "prod6_agg_name",
+  "prod6_agg_stwt",
+  "prod6_agg_atwt",
+  "prod6_agg_moi",
+  "prod7_cem_name",
+  "prod7_cem_stwt",
+  "prod7_cem_atwt",
+  "prod7_cem_corr",
+  "prod8_cem_name",
+  "prod8_cem_stwt",
+  "prod8_cem_atwt",
+  "prod8_cem_corr",
+  "prod9_cem_name",
+  "prod9_cem_stwt",
+  "prod9_cem_atwt",
+  "prod9_cem_corr",
+  "prod10_cem_name",
+  "prod10_cem_stwt",
+  "prod10_cem_atwt",
+  "prod10_cem_corr",
+  "prod11_cem_name",
+  "prod11_cem_stwt",
+  "prod11_cem_atwt",
+  "prod11_cem_corr",
+  "prod12_wtr_name",
+  "prod12_wtr_stwt",
+  "prod12_wtr_atwt",
+  "prod12_wtr_corr",
+  "prod13_wtr_name",
+  "prod13_wtr_stwt",
+  "prod13_wtr_atwt",
+  "prod13_wtr_corr",
+  "prod14_wtr_name",
+  "prod14_wtr_stwt",
+  "prod14_wtr_atwt",
+  "prod15_adm_name",
+  "prod15_adm_stwt",
+  "prod15_adm_atwt",
+  "prod15_adm_corr",
+  "prod16_adm_name",
+  "prod16_adm_stwt",
+  "prod16_adm_atwt",
+  "prod16_adm_corr",
+  "prod17_adm_name",
+  "prod17_adm_stwt",
+  "prod17_adm_agwt",
+  "prod17_adm_corr",
+  "prod18_adm_name",
+  "prod18_adm_stwt",
+  "prod18_adm_atwt",
+  "prod18_adm_corr",
+  "prod19_sil_name",
+  "prod19_sil_stwt",
+  "prod19_sil_atwt",
+  "prod19_sil_corr",
+  "prod20_add_name",
+  "prod20_add_stwt",
+  "prod20_add_atwt",
+  "prod21_add_name",
+  "prod21_add_stwt",
+  "prod21_add_atwt",
+  "prod22_add_name",
+  "prod22_add_stwt",
+  "prod22_add_atwt",
+  "prod23_add_name",
+  "prod23_add_stwt",
+  "prod23_add_atwt",
+  "truck_trip",
+  "prod1_agg_moi_ab",
+  "prod2_agg_moi_ab",
+  "prod3_agg_moi_ab",
+  "prod4_agg_moi_ab",
+  "prod5_agg_moi_ab",
+  "prod6_agg_moi_ab",
+  "batch_st",
+  "batch_et",
+  "bt2_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_index",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "batch_index"
+  },
+  {
+   "fieldname": "batch_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "batch_date"
+  },
+  {
+   "fieldname": "batch_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "batch_size"
+  },
+  {
+   "fieldname": "prod_adj",
+   "fieldtype": "Float",
+   "label": "Prod_Adj"
+  },
+  {
+   "fieldname": "prod1_agg_name",
+   "fieldtype": "Data",
+   "label": "Prod1_Agg_Name"
+  },
+  {
+   "fieldname": "prod1_agg_stwt",
+   "fieldtype": "Float",
+   "label": "Prod1_Agg_Stwt"
+  },
+  {
+   "fieldname": "prod1_agg_atwt",
+   "fieldtype": "Float",
+   "label": "Prod1_Agg_Atwt"
+  },
+  {
+   "fieldname": "prod1_agg_moi",
+   "fieldtype": "Float",
+   "label": "Prod1_Agg_Moi"
+  },
+  {
+   "fieldname": "prod2_agg_name",
+   "fieldtype": "Data",
+   "label": "Prod2_Agg_Name"
+  },
+  {
+   "fieldname": "prod2_agg_stwt",
+   "fieldtype": "Float",
+   "label": "Prod2_Agg_Stwt"
+  },
+  {
+   "fieldname": "prod2_agg_atwt",
+   "fieldtype": "Float",
+   "label": "Prod2_Agg_Atwt"
+  },
+  {
+   "fieldname": "prod2_agg_moi",
+   "fieldtype": "Float",
+   "label": "Prod2_Agg_Moi"
+  },
+  {
+   "fieldname": "prod3_agg_name",
+   "fieldtype": "Data",
+   "label": "Prod3_Agg_Name"
+  },
+  {
+   "fieldname": "prod3_agg_stwt",
+   "fieldtype": "Float",
+   "label": "Prod3_Agg_Stwt"
+  },
+  {
+   "fieldname": "prod3_agg_atwt",
+   "fieldtype": "Float",
+   "label": "Prod3_Agg_Atwt"
+  },
+  {
+   "fieldname": "prod3_agg_moi",
+   "fieldtype": "Float",
+   "label": "Prod3_Agg_Moi"
+  },
+  {
+   "fieldname": "prod4_agg_name",
+   "fieldtype": "Data",
+   "label": "Prod4_Agg_Name"
+  },
+  {
+   "fieldname": "prod4_agg_stwt",
+   "fieldtype": "Float",
+   "label": "Prod4_Agg_Stwt"
+  },
+  {
+   "fieldname": "prod4_agg_atwt",
+   "fieldtype": "Float",
+   "label": "Prod4_Agg_Atwt"
+  },
+  {
+   "fieldname": "prod4_agg_moi",
+   "fieldtype": "Float",
+   "label": "Prod4_Agg_Moi"
+  },
+  {
+   "fieldname": "prod5_agg_name",
+   "fieldtype": "Data",
+   "label": "Prod5_Agg_Name"
+  },
+  {
+   "fieldname": "prod5_agg_stwt",
+   "fieldtype": "Float",
+   "label": "Prod5_Agg_Stwt"
+  },
+  {
+   "fieldname": "prod5_agg_atwt",
+   "fieldtype": "Float",
+   "label": "Prod5_Agg_Atwt"
+  },
+  {
+   "fieldname": "prod5_agg_moi",
+   "fieldtype": "Float",
+   "label": "Prod5_Agg_Moi"
+  },
+  {
+   "fieldname": "prod6_agg_name",
+   "fieldtype": "Data",
+   "label": "Prod6_Agg_Name"
+  },
+  {
+   "fieldname": "prod6_agg_stwt",
+   "fieldtype": "Float",
+   "label": "Prod6_Agg_Stwt"
+  },
+  {
+   "fieldname": "prod6_agg_atwt",
+   "fieldtype": "Float",
+   "label": "Prod6_Agg_Atwt"
+  },
+  {
+   "fieldname": "prod6_agg_moi",
+   "fieldtype": "Float",
+   "label": "Prod6_Agg_Moi"
+  },
+  {
+   "fieldname": "prod7_cem_name",
+   "fieldtype": "Data",
+   "label": "Prod7_Cem_Name"
+  },
+  {
+   "fieldname": "prod7_cem_stwt",
+   "fieldtype": "Float",
+   "label": "Prod7_Cem_Stwt"
+  },
+  {
+   "fieldname": "prod7_cem_atwt",
+   "fieldtype": "Float",
+   "label": "Prod7_Cem_Atwt"
+  },
+  {
+   "fieldname": "prod7_cem_corr",
+   "fieldtype": "Float",
+   "label": "Prod7_Cem_Corr"
+  },
+  {
+   "fieldname": "prod8_cem_name",
+   "fieldtype": "Data",
+   "label": "Prod8_Cem_Name"
+  },
+  {
+   "fieldname": "prod8_cem_stwt",
+   "fieldtype": "Float",
+   "label": "Prod8_Cem_Stwt"
+  },
+  {
+   "fieldname": "prod8_cem_atwt",
+   "fieldtype": "Float",
+   "label": "Prod8_Cem_Atwt"
+  },
+  {
+   "fieldname": "prod8_cem_corr",
+   "fieldtype": "Float",
+   "label": "Prod8_Cem_Corr"
+  },
+  {
+   "fieldname": "prod9_cem_name",
+   "fieldtype": "Data",
+   "label": "Prod9_Cem_Name"
+  },
+  {
+   "fieldname": "prod9_cem_stwt",
+   "fieldtype": "Float",
+   "label": "Prod9_Cem_Stwt"
+  },
+  {
+   "fieldname": "prod9_cem_atwt",
+   "fieldtype": "Float",
+   "label": "Prod9_Cem_Atwt"
+  },
+  {
+   "fieldname": "prod9_cem_corr",
+   "fieldtype": "Float",
+   "label": "Prod9_Cem_Corr"
+  },
+  {
+   "fieldname": "prod10_cem_name",
+   "fieldtype": "Data",
+   "label": "Prod10_Cem_Name"
+  },
+  {
+   "fieldname": "prod10_cem_stwt",
+   "fieldtype": "Float",
+   "label": "Prod10_Cem_Stwt"
+  },
+  {
+   "fieldname": "prod10_cem_atwt",
+   "fieldtype": "Float",
+   "label": "Prod10_Cem_Atwt"
+  },
+  {
+   "fieldname": "prod10_cem_corr",
+   "fieldtype": "Float",
+   "label": "Prod10_Cem_Corr"
+  },
+  {
+   "fieldname": "prod11_cem_name",
+   "fieldtype": "Data",
+   "label": "Prod11_Cem_Name"
+  },
+  {
+   "fieldname": "prod11_cem_stwt",
+   "fieldtype": "Float",
+   "label": "Prod11_Cem_Stwt"
+  },
+  {
+   "fieldname": "prod11_cem_atwt",
+   "fieldtype": "Float",
+   "label": "Prod11_Cem_Atwt"
+  },
+  {
+   "fieldname": "prod11_cem_corr",
+   "fieldtype": "Float",
+   "label": "Prod11_Cem_Corr"
+  },
+  {
+   "fieldname": "prod12_wtr_name",
+   "fieldtype": "Data",
+   "label": "Prod12_Wtr_Name"
+  },
+  {
+   "fieldname": "prod12_wtr_stwt",
+   "fieldtype": "Float",
+   "label": "Prod12_Wtr_Stwt"
+  },
+  {
+   "fieldname": "prod12_wtr_atwt",
+   "fieldtype": "Float",
+   "label": "Prod12_Wtr_Atwt"
+  },
+  {
+   "fieldname": "prod12_wtr_corr",
+   "fieldtype": "Float",
+   "label": "Prod12_Wtr_Corr"
+  },
+  {
+   "fieldname": "prod13_wtr_name",
+   "fieldtype": "Data",
+   "label": "Prod13_Wtr_Name"
+  },
+  {
+   "fieldname": "prod13_wtr_stwt",
+   "fieldtype": "Float",
+   "label": "Prod13_Wtr_Stwt"
+  },
+  {
+   "fieldname": "prod13_wtr_atwt",
+   "fieldtype": "Float",
+   "label": "Prod13_Wtr_Atwt"
+  },
+  {
+   "fieldname": "prod13_wtr_corr",
+   "fieldtype": "Float",
+   "label": "Prod13_Wtr_Corr"
+  },
+  {
+   "fieldname": "prod14_wtr_name",
+   "fieldtype": "Data",
+   "label": "Prod14_Wtr_Name"
+  },
+  {
+   "fieldname": "prod14_wtr_stwt",
+   "fieldtype": "Float",
+   "label": "Prod14_Wtr_Stwt"
+  },
+  {
+   "fieldname": "prod14_wtr_atwt",
+   "fieldtype": "Float",
+   "label": "Prod14_Wtr_Atwt"
+  },
+  {
+   "fieldname": "prod15_adm_name",
+   "fieldtype": "Data",
+   "label": "Prod15_Adm_Name"
+  },
+  {
+   "fieldname": "prod15_adm_stwt",
+   "fieldtype": "Float",
+   "label": "Prod15_Adm_Stwt"
+  },
+  {
+   "fieldname": "prod15_adm_atwt",
+   "fieldtype": "Float",
+   "label": "Prod15_Adm_Atwt"
+  },
+  {
+   "fieldname": "prod15_adm_corr",
+   "fieldtype": "Float",
+   "label": "Prod15_Adm_Corr"
+  },
+  {
+   "fieldname": "prod16_adm_name",
+   "fieldtype": "Data",
+   "label": "Prod16_Adm_Name"
+  },
+  {
+   "fieldname": "prod16_adm_stwt",
+   "fieldtype": "Float",
+   "label": "Prod16_Adm_Stwt"
+  },
+  {
+   "fieldname": "prod16_adm_atwt",
+   "fieldtype": "Float",
+   "label": "Prod16_Adm_Atwt"
+  },
+  {
+   "fieldname": "prod16_adm_corr",
+   "fieldtype": "Float",
+   "label": "Prod16_Adm_Corr"
+  },
+  {
+   "fieldname": "prod17_adm_name",
+   "fieldtype": "Data",
+   "label": "Prod17_Adm_Name"
+  },
+  {
+   "fieldname": "prod17_adm_stwt",
+   "fieldtype": "Float",
+   "label": "Prod17_Adm_Stwt"
+  },
+  {
+   "fieldname": "prod17_adm_agwt",
+   "fieldtype": "Float",
+   "label": "Prod17_Adm_Agwt"
+  },
+  {
+   "fieldname": "prod17_adm_corr",
+   "fieldtype": "Float",
+   "label": "Prod17_Adm_Corr"
+  },
+  {
+   "fieldname": "prod18_adm_name",
+   "fieldtype": "Data",
+   "label": "Prod18_Adm_Name"
+  },
+  {
+   "fieldname": "prod18_adm_stwt",
+   "fieldtype": "Float",
+   "label": "Prod18_Adm_Stwt"
+  },
+  {
+   "fieldname": "prod18_adm_atwt",
+   "fieldtype": "Float",
+   "label": "Prod18_Adm_Atwt"
+  },
+  {
+   "fieldname": "prod18_adm_corr",
+   "fieldtype": "Float",
+   "label": "Prod18_Adm_Corr"
+  },
+  {
+   "fieldname": "prod19_sil_name",
+   "fieldtype": "Data",
+   "label": "Prod19_Sil_Name"
+  },
+  {
+   "fieldname": "prod19_sil_stwt",
+   "fieldtype": "Float",
+   "label": "Prod19_Sil_Stwt"
+  },
+  {
+   "fieldname": "prod19_sil_atwt",
+   "fieldtype": "Float",
+   "label": "Prod19_Sil_Atwt"
+  },
+  {
+   "fieldname": "prod19_sil_corr",
+   "fieldtype": "Float",
+   "label": "Prod19_Sil_Corr"
+  },
+  {
+   "fieldname": "prod20_add_name",
+   "fieldtype": "Data",
+   "label": "Prod20_Add_Name"
+  },
+  {
+   "fieldname": "prod20_add_stwt",
+   "fieldtype": "Float",
+   "label": "Prod20_Add_Stwt"
+  },
+  {
+   "fieldname": "prod20_add_atwt",
+   "fieldtype": "Float",
+   "label": "Prod20_Add_Atwt"
+  },
+  {
+   "fieldname": "prod21_add_name",
+   "fieldtype": "Data",
+   "label": "Prod21_Add_Name"
+  },
+  {
+   "fieldname": "prod21_add_stwt",
+   "fieldtype": "Float",
+   "label": "Prod21_Add_Stwt"
+  },
+  {
+   "fieldname": "prod21_add_atwt",
+   "fieldtype": "Float",
+   "label": "Prod21_Add_Atwt"
+  },
+  {
+   "fieldname": "prod22_add_name",
+   "fieldtype": "Data",
+   "label": "Prod22_Add_Name"
+  },
+  {
+   "fieldname": "prod22_add_stwt",
+   "fieldtype": "Float",
+   "label": "Prod22_Add_Stwt"
+  },
+  {
+   "fieldname": "prod22_add_atwt",
+   "fieldtype": "Float",
+   "label": "Prod22_Add_Atwt"
+  },
+  {
+   "fieldname": "prod23_add_name",
+   "fieldtype": "Data",
+   "label": "Prod23_Add_Name"
+  },
+  {
+   "fieldname": "prod23_add_stwt",
+   "fieldtype": "Float",
+   "label": "Prod23_Add_Stwt"
+  },
+  {
+   "fieldname": "prod23_add_atwt",
+   "fieldtype": "Float",
+   "label": "Prod23_Add_Atwt"
+  },
+  {
+   "fieldname": "truck_trip",
+   "fieldtype": "Float",
+   "label": "Truck_Trip"
+  },
+  {
+   "fieldname": "prod1_agg_moi_ab",
+   "fieldtype": "Data",
+   "label": "Prod1_Agg_Moi_Ab"
+  },
+  {
+   "fieldname": "prod2_agg_moi_ab",
+   "fieldtype": "Data",
+   "label": "Prod2_Agg_Moi_Ab"
+  },
+  {
+   "fieldname": "prod3_agg_moi_ab",
+   "fieldtype": "Data",
+   "label": "Prod3_Agg_Moi_Ab"
+  },
+  {
+   "fieldname": "prod4_agg_moi_ab",
+   "fieldtype": "Data",
+   "label": "Prod4_Agg_Moi_Ab"
+  },
+  {
+   "fieldname": "prod5_agg_moi_ab",
+   "fieldtype": "Data",
+   "label": "Prod5_Agg_Moi_Ab"
+  },
+  {
+   "fieldname": "prod6_agg_moi_ab",
+   "fieldtype": "Data",
+   "label": "Prod6_Agg_Moi_Ab"
+  },
+  {
+   "fieldname": "batch_st",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Batch_St"
+  },
+  {
+   "fieldname": "batch_et",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Batch_Et"
+  },
+  {
+   "fieldname": "bt2_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "BT2_ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-28 20:53:04.853951",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Material Consumption Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

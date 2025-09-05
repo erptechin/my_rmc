@@ -1,0 +1,203 @@
+<div
+    class="fixed h-[100px] transition-[margin] duration-100 xl:ml-[275px] group-[.side-menu--collapsed]:xl:ml-[90px] inset-x-0 top-0">
+    <div
+        class="box group absolute left-0 right-0 md:mx-0 h-full transition-colors duration-200 ease-in-out before:absolute rounded-none border-transparent">
+        <div class="flex h-full w-full items-center px-4 transition-[padding] duration-300 ease-in-out">
+            <div class="flex items-center gap-1 xl:hidden">
+                <a class="p-2 rounded-full open-mobile-menu hover:bg-slate-100" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        data-lucide="align-justify" data-tw-merge=""
+                        class="lucide lucide-align-justify stroke-[1] h-[18px] w-[18px]">
+                        <line x1="3" x2="21" y1="6" y2="6"></line>
+                        <line x1="3" x2="21" y1="12" y2="12"></line>
+                        <line x1="3" x2="21" y1="18" y2="18"></line>
+                    </svg>
+                </a>
+                <a class="p-2 rounded-full hover:bg-slate-100 short-search-icon" data-tw-toggle="modal"
+                    data-tw-target="#quick-search" href="javascript:;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        data-lucide="search" data-tw-merge="" class="lucide lucide-search stroke-[1] h-[18px] w-[18px]">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- BEGIN: Breadcrumb -->
+            <nav aria-label="breadcrumb" class="flex flex-2">
+                <ol class="flex items-center text-theme-1 dark:text-slate-300 lg:flex sm:hidden"
+                    id="navbar-breadcrumbs"></ol>
+            </nav>
+
+            <!-- BEGIN: Search -->
+            <div class="relative justify-center flex-2 lg:flex sm:hidden searchbar" data-toggle="dropdown">
+                <div
+                    class="flex w-[450px] cursor-pointer items-center rounded-full border px-3.5 py-3 text-slate-400 transition-colors">
+                    <div class="ml-1 mr-auto">Search...</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        data-lucide="search" data-tw-merge="" class="lucide lucide-search stroke-[1] h-[18px] w-[18px]">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div id="quick-search" aria-hidden="true" tabindex="-1"
+                class="dropdown-menu modal group bg-gradient-to-b from-theme-1/50 via-theme-2/50 to-black/50 transition-[visibility,opacity] w-screen h-screen fixed left-0 top-0 overflow-y-hidden z-[60] [&:not(.show)]:duration-[0s,0.2s] [&:not(.show)]:delay-[0.2s,0s] [&:not(.show)]:invisible [&:not(.show)]:opacity-0 [&.show]:visible [&.show]:opacity-100 [&.show]:duration-[0s,0.1s]">
+                <div
+                    class="relative mx-auto my-2 w-[95%] scale-95 transition-transform group-[.show]:scale-100 sm:mt-40 sm:w-[600px] lg:w-[700px]">
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex w-12 items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" data-lucide="search" data-tw-merge=""
+                                class="lucide lucide-search stroke-[1] w-5 h-5 -mr-1.5 text-slate-500">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                        </div>
+                        <div class="awesomplete"><input data-tw-merge="" id="navbar-search" type="text"
+                                placeholder="Quick search..."
+                                class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full border-slate-200 placeholder:text-slate-400/90 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 [&[type=`file`]]:border file:mr-4 file:py-2 file:px-4 file:rounded-l-md file:border-0 file:border-r-[1px] file:border-slate-100/10 file:text-sm file:font-semibold file:bg-slate-100 file:text-slate-500/70 hover:file:bg-200 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10 rounded-lg border-0 py-3.5 pl-12 pr-14 text-base shadow-lg focus:ring-0"
+                                autocomplete="off" aria-expanded="false" aria-owns="awesomplete_list_1" role="combobox">
+                            <ul hidden="" role="listbox" id="awesomplete_list_1"></ul><span class="visually-hidden"
+                                role="status" aria-live="assertive" aria-atomic="true">Begin typing for
+                                results.</span>
+                        </div>
+                        <div class="absolute inset-y-0 right-0 flex w-14 items-center">
+                            <div
+                                class="mr-auto esc_text rounded-[0.4rem] border bg-slate-100 px-2 py-1 text-xs text-slate-500/80">
+                                ESC
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Search -->
+
+
+            <!-- BEGIN: Notification & User Menu -->
+            <div class="flex items-center flex-1">
+                <div class="flex items-center gap-1 ml-auto">
+                    <a id="notification_bell" class="p-2 hover:bg-slate-100" data-tw-toggle="modal"
+                        data-tw-target="#notifications-panel" href="javascript:;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            data-lucide="bell" data-tw-merge="" class="lucide lucide-bell">
+                            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <div id="user_box" class="user_box flex rounded-md p-3 ml-2">
+                    <div class="user_avatar rounded-full mr-2"></div>
+                    <div class="user_details"></div>
+                    <div data-tw-merge="" data-tw-placement="bottom-end" class="dropdown relative ml-3">
+
+                        <button data-toggle="dropdown" aria-expanded="false"
+                            class="cursor-pointer border-transparent user_button">...</button>
+
+                        <div data-transition="" data-selector=".show"
+                            data-enter="transition-all ease-linear duration-150"
+                            data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1"
+                            data-enter-to="!mt-1 visible opacity-100 translate-y-0"
+                            data-leave="transition-all ease-linear duration-150"
+                            data-leave-from="!mt-1 visible opacity-100 translate-y-0"
+                            data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1"
+                            class="dropdown-menu tw-dropdown-menu absolute z-[9999]" data-popper-placement="bottom-end">
+                            <div data-tw-merge=""
+                                class="dropdown-content rounded-md border-transparent bg-white p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 w-56 mt-1">
+
+                                <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    href="/app/user-profile">
+                                    My Profile
+                                </a>
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return frappe.ui.toolbar.route_to_user()">
+                                    My Settings
+                                </button>
+
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return frappe.ui.toolbar.setup_session_defaults()">
+                                    Session Defaults
+                                </button>
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return frappe.ui.toolbar.clear_cache()">
+                                    Reload
+                                </button>
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return frappe.ui.toolbar.view_website()">
+                                    View Website
+                                </button>
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return frappe.ui.toolbar.toggle_full_width()">
+                                    Toggle Full Width
+                                </button>
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return new frappe.ui.ThemeSwitcher().show()">
+                                    Toggle Theme
+                                </button>
+
+                                <div class="h-px my-2 -mx-2 bg-slate-200/60 dark:bg-darkmode-400">
+                                </div>
+
+                                <button
+                                    class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item"
+                                    onclick="return frappe.app.logout()">
+                                    Log out
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <div data-tw-backdrop="" aria-hidden="true" tabindex="-1" id="notifications-panel"
+                    class="modal group bg-gradient-to-b from-theme-1/50 via-theme-2/50 to-black/50 transition-[visibility,opacity] w-screen h-screen fixed left-0 top-0 [&:not(.show)]:duration-[0s,0.2s] [&:not(.show)]:delay-[0.2s,0s] [&:not(.show)]:invisible [&:not(.show)]:opacity-0 [&.show]:visible [&.show]:opacity-100 [&.show]:duration-[0s,0.4s] overflow-y-auto">
+                    <div data-tw-merge=""
+                        class="ml-auto h-screen flex flex-col bg-white relative shadow-md transition-[margin-right] duration-[0.6s] -mr-[100%] group-[.show]:mr-0 dark:bg-darkmode-600 sm:w-[460px] w-72">
+                        <a id="close-box"
+                            class="absolute inset-y-0 left-0 right-auto my-auto -ml-[60px] flex h-8 w-8 items-center justify-center rounded-full border border-white/90 bg-white/5 text-white/90 transition-all hover:rotate-180 hover:scale-105 hover:bg-white/10 focus:outline-none sm:-ml-[105px] sm:h-14 sm:w-14"
+                            data-tw-dismiss="modal" href="javascript:;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" data-lucide="x" data-tw-merge=""
+                                class="lucide lucide-x stroke-[1] h-8 w-8">
+                                <path d="M18 6 6 18"></path>
+                                <path d="m6 6 12 12"></path>
+                            </svg>
+                        </a>
+                        <div data-tw-merge=""
+                            class="header-actions flex items-center border-b border-slate-200/60 dark:border-darkmode-400 px-6 py-5">
+                            <h2 class="mr-auto text-base font-medium">Notifications</h2>
+                        </div>
+                        <div data-tw-merge="" class="overflow-y-auto flex-1 p-0">
+                            <div class="flex flex-col gap-0.5 p-3" id="notification_list">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

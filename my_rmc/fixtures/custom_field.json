@@ -1,0 +1,12 @@
+[
+    {
+        "dt": "Employee",
+        "doctype": "Custom Field",
+        "fieldname": "custom_branches",
+        "fieldtype": "Table",
+        "insert_after": "custom_section_break_branch",
+        "label": "Branchs",
+        "name": "Employee-custom_branches",
+        "options": "Branches"
+    }
+]

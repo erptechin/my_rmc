@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-26 03:33:13.207764",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pour_card_no",
+  "column_break_ulim",
+  "date",
+  "pour_card_grade",
+  "column_break_lmhc",
+  "time",
+  "batching_plant_no",
+  "column_break_uouv",
+  "company",
+  "branch",
+  "section_break_upuz",
+  "customer",
+  "site",
+  "column_break_svkm",
+  "tower",
+  "floor",
+  "section_break_jxke",
+  "batch_no",
+  "batch_grade",
+  "batch_qty",
+  "column_break_bkaw",
+  "vehicle_no",
+  "driver_name",
+  "pump_name",
+  "column_break_eequ",
+  "qty",
+  "produced_qty",
+  "cumulative_qty",
+  "column_break_pdap",
+  "pour_details",
+  "pour_card_available_qty",
+  "wastage_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "DC-.YYYY.-"
+  },
+  {
+   "fieldname": "column_break_ulim",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_lmhc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "column_break_uouv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "pour_card_no",
+   "fieldtype": "Link",
+   "label": "Pour Card No",
+   "options": "Pour Card"
+  },
+  {
+   "fieldname": "batching_plant_no",
+   "fieldtype": "Link",
+   "label": "Batching Plant No",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No"
+  },
+  {
+   "fieldname": "section_break_upuz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "column_break_svkm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Address"
+  },
+  {
+   "fieldname": "batch_qty",
+   "fieldtype": "Float",
+   "label": "Batch Qty"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Link",
+   "label": "Vehicle No",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Link",
+   "label": "Driver Name",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "section_break_jxke",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wastage_qty",
+   "fieldtype": "Float",
+   "label": "Wastage Qty"
+  },
+  {
+   "fieldname": "column_break_bkaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pour_card_grade",
+   "fieldtype": "Link",
+   "label": "Pour Card Grade",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_eequ",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pdap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pour_card_available_qty",
+   "fieldtype": "Float",
+   "label": "Pour Card Available Qty"
+  },
+  {
+   "fieldname": "batch_grade",
+   "fieldtype": "Data",
+   "label": "Batch Grade"
+  },
+  {
+   "fieldname": "tower",
+   "fieldtype": "Link",
+   "label": "Tower",
+   "options": "Structure"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Link",
+   "label": "Floor",
+   "options": "Floor"
+  },
+  {
+   "fieldname": "cumulative_qty",
+   "fieldtype": "Float",
+   "label": "Cumulative Qty"
+  },
+  {
+   "fieldname": "pour_details",
+   "fieldtype": "Link",
+   "label": "Pour Details",
+   "options": "Pour Card"
+  },
+  {
+   "fieldname": "pump_name",
+   "fieldtype": "Link",
+   "label": "Pump Name",
+   "options": "Asset"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "produced_qty",
+   "fieldtype": "Float",
+   "label": "Produced Qty"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-17 19:55:15.743089",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Delivery Challan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

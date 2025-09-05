@@ -1,0 +1,1 @@
+const s={dashboards:{dashboards:"Home",home:"Home","charge-entry":"Charge Entry"},"case-master":{"case-master":"Case Masters",agency:"Agency"},sales:{sales:"Sales","sales-order":"Sales Order"},settings:{settings:"Settings",general:"General",appearance:"Appearance",sessions:"Sessions & Password"}},e={nav:s};export{e as default,s as nav};

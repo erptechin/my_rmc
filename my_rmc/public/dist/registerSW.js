@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/assets/my_rmc/dist/sw.js', { scope: '/assets/my_rmc/dist/' })})}

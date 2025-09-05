@@ -1,0 +1,479 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:recipe_code",
+ "creation": "2024-11-30 11:07:05.918145",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ubjm",
+  "column_break_bfmt",
+  "naming_series",
+  "density",
+  "column_break_qfra",
+  "recipe_name",
+  "customer",
+  "column_break_xtqv",
+  "recipe_code",
+  "site",
+  "section_break_phce",
+  "recipe_items",
+  "aggregate_section",
+  "agg1_name",
+  "agg1_qty",
+  "column_break_dtqi",
+  "agg2_name",
+  "agg2_qty",
+  "column_break_liws",
+  "agg3_name",
+  "agg3_qty",
+  "column_break_lruu",
+  "agg4_name",
+  "agg4_qty",
+  "column_break_pkhb",
+  "agg5_name",
+  "agg5_qty",
+  "column_break_lfut",
+  "agg6_name",
+  "agg6_qty",
+  "cement_section",
+  "cem1_name",
+  "cem1_qty",
+  "column_break_jayg",
+  "cem2_name",
+  "cem2_qty",
+  "column_break_jpqq",
+  "cem3_name",
+  "cem3_qty",
+  "column_break_dwvy",
+  "cem4_name",
+  "cem4_qty",
+  "column_break_cfgp",
+  "cem5_name",
+  "cem5_qty",
+  "column_break_egju",
+  "sil1_name",
+  "sil1_qty",
+  "admixture_section",
+  "adm1_name",
+  "adm1_qty",
+  "column_break_mvjo",
+  "adm2_name",
+  "adm2_qty",
+  "column_break_wpgr",
+  "adm3_name",
+  "adm3_qty",
+  "column_break_sxei",
+  "adm4_name",
+  "adm4_qty",
+  "section_break_mtjp",
+  "wtr1_name",
+  "wtr1_qty",
+  "column_break_rbix",
+  "wtr2_name",
+  "wtr2_qty",
+  "column_break_jqfc",
+  "wtr3_name",
+  "wtr3_qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "recipe_code",
+   "fieldtype": "Data",
+   "label": "Recipe Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_bfmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "recipe_name",
+   "fieldtype": "Link",
+   "label": "Recipe Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "section_break_phce",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recipe_items",
+   "fieldtype": "Table",
+   "ignore_user_permissions": 1,
+   "label": "Recipe Items",
+   "options": "Recipe Items"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "REC-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_mtjp",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "WATER"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg1_name",
+   "fieldtype": "Link",
+   "label": "Agg1_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg2_name",
+   "fieldtype": "Link",
+   "label": "Agg2_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg3_name",
+   "fieldtype": "Link",
+   "label": "Agg3_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg4_name",
+   "fieldtype": "Link",
+   "label": "Agg4_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg5_name",
+   "fieldtype": "Link",
+   "label": "Agg5_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "agg6_name",
+   "fieldtype": "Link",
+   "label": "Agg6_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg1_qty",
+   "fieldtype": "Float",
+   "label": "Agg1_Qty"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg2_qty",
+   "fieldtype": "Float",
+   "label": "Agg2_Qty"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg3_qty",
+   "fieldtype": "Float",
+   "label": "Agg3_Qty"
+  },
+  {
+   "bold": 1,
+   "fieldname": "agg4_qty",
+   "fieldtype": "Float",
+   "label": "Agg4_Qty"
+  },
+  {
+   "fieldname": "agg5_qty",
+   "fieldtype": "Float",
+   "label": "Agg5_Qty"
+  },
+  {
+   "fieldname": "agg6_qty",
+   "fieldtype": "Float",
+   "label": "Agg6_Qty"
+  },
+  {
+   "fieldname": "column_break_egju",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "cem1_name",
+   "fieldtype": "Link",
+   "label": "Cem1_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "cem1_qty",
+   "fieldtype": "Float",
+   "label": "Cem1_Qty"
+  },
+  {
+   "fieldname": "cem4_name",
+   "fieldtype": "Link",
+   "label": "Cem4_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem4_qty",
+   "fieldtype": "Float",
+   "label": "Cem4_Qty"
+  },
+  {
+   "fieldname": "cem2_name",
+   "fieldtype": "Link",
+   "label": "Cem2_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem2_qty",
+   "fieldtype": "Float",
+   "label": "Cem2_Qty"
+  },
+  {
+   "fieldname": "cem5_name",
+   "fieldtype": "Link",
+   "label": "Cem5_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem5_qty",
+   "fieldtype": "Float",
+   "label": "Cem5_Qty"
+  },
+  {
+   "fieldname": "cem3_name",
+   "fieldtype": "Link",
+   "label": "Cem3_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "cem3_qty",
+   "fieldtype": "Float",
+   "label": "Cem3_Qty"
+  },
+  {
+   "fieldname": "column_break_sxei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jqfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sil1_name",
+   "fieldtype": "Link",
+   "label": "Sil1_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "sil1_qty",
+   "fieldtype": "Float",
+   "label": "Sil1_Qty"
+  },
+  {
+   "bold": 1,
+   "fieldname": "wtr1_name",
+   "fieldtype": "Link",
+   "label": "Wtr1_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "wtr1_qty",
+   "fieldtype": "Float",
+   "label": "Wtr1_Qty"
+  },
+  {
+   "fieldname": "wtr2_name",
+   "fieldtype": "Link",
+   "label": "Wtr2_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr2_qty",
+   "fieldtype": "Float",
+   "label": "Wtr2_Qty"
+  },
+  {
+   "fieldname": "wtr3_name",
+   "fieldtype": "Link",
+   "label": "Wtr3_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "wtr3_qty",
+   "fieldtype": "Float",
+   "label": "Wtr3_Qty"
+  },
+  {
+   "bold": 1,
+   "fieldname": "adm1_name",
+   "fieldtype": "Link",
+   "label": "Adm1_Name",
+   "options": "Item"
+  },
+  {
+   "bold": 1,
+   "fieldname": "adm1_qty",
+   "fieldtype": "Float",
+   "label": "Adm1_Qty"
+  },
+  {
+   "fieldname": "adm2_name",
+   "fieldtype": "Link",
+   "label": "Adm2_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm2_qty",
+   "fieldtype": "Float",
+   "label": "Adm2_Qty"
+  },
+  {
+   "fieldname": "adm3_name",
+   "fieldtype": "Link",
+   "label": "Adm3_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm3_qty",
+   "fieldtype": "Float",
+   "label": "Adm3_Qty"
+  },
+  {
+   "fieldname": "adm4_name",
+   "fieldtype": "Link",
+   "label": "Adm4_Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "adm4_qty",
+   "fieldtype": "Float",
+   "label": "Adm4_Qty"
+  },
+  {
+   "fieldname": "aggregate_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "AGGREGATE"
+  },
+  {
+   "fieldname": "column_break_dtqi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_liws",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lruu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pkhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lfut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cement_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "CEMENT"
+  },
+  {
+   "fieldname": "column_break_jayg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jpqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dwvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cfgp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "admixture_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "ADMIXTURE"
+  },
+  {
+   "fieldname": "column_break_mvjo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wpgr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_rbix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Address"
+  },
+  {
+   "fieldname": "density",
+   "fieldtype": "Float",
+   "label": "Density"
+  },
+  {
+   "fieldname": "section_break_ubjm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qfra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xtqv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-18 22:21:11.586931",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Recipe",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "recipe_code",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "recipe_code"
+}

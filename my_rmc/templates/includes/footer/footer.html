@@ -1,0 +1,68 @@
+{% macro footer_link(item) %}
+<a href="{{ item.url | abs_url }}" {% if item.open_in_new_tab %} target="_blank" {% endif %} class="footer-link"
+	rel="noreferrer">
+	{%- if item.icon -%}
+	<img src="{{ item.icon }}" alt="{{ item.label }}">
+	{%- else -%}
+	{{ item.label }}
+	{%- endif -%}
+</a>
+{% endmacro %}
+
+<footer class="footer footer-one">
+	<div class="footer-top aos aos-init aos-animate" data-aos="fade-up">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					{%- if footer_logo -%}
+					<div class="footer-logo">
+						<a href="/"><img src="{{ footer_logo }}" alt="Logo" /></a>
+					</div>
+					{%- else -%}
+					<div class="footer-logo">
+						<a href="/"><img src="/assets/my_rmc/images/logo.png" alt="Logo" /></a>
+					</div>
+					{%- endif -%}
+					{%- if footer_address -%}
+					<div class="footer-address">
+						{{ footer_address }}
+					</div>
+					{%- endif -%}
+				</div>
+				<div class="col-lg-6">
+					{% if footer_items -%}
+					{% include "templates/includes/footer/footer_grouped_links.html" %}
+					{% endif %}
+				</div>
+				<div class="col-lg-3 col-md-7">
+					{% block extension %}
+					{% include "templates/includes/footer/footer_extension.html" %}
+					{% endblock %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="container">
+			<div class="copyright">
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						{% if copyright %}
+						<p class="mb-0">&copy; {{ copyright }}</p>
+						{% endif %}
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<ul class="policy-menu">
+							{%- for item in footer_items if item.label and not (item.parent_label or
+							item.child_items) and not
+							item.right %}
+							<li>{{ footer_link(item) }}</li>
+							{% endfor -%}
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</footer>

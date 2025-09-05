@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-03-10 20:48:56.746933",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "cube_id_no",
+  "pour_card_no",
+  "batch_delivery_no",
+  "column_break_vzrs",
+  "date_of_casting",
+  "structure_location",
+  "grade_of_concrete",
+  "column_break_lqux",
+  "batching_plant",
+  "tower",
+  "section_break_ybhh",
+  "table_wuyt",
+  "3_days",
+  "7_days",
+  "28_days",
+  "56_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "cube_id_no",
+   "fieldtype": "Data",
+   "label": "Cube ID No"
+  },
+  {
+   "fieldname": "pour_card_no",
+   "fieldtype": "Link",
+   "label": "Pour Card No",
+   "options": "Sales Order"
+  },
+  {
+   "fieldname": "batch_delivery_no",
+   "fieldtype": "Link",
+   "label": "Batch/Delivery No",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "column_break_vzrs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_casting",
+   "fieldtype": "Date",
+   "label": "Date Of Casting"
+  },
+  {
+   "fieldname": "grade_of_concrete",
+   "fieldtype": "Link",
+   "label": "Grade Of Concrete",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_lqux",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "batching_plant",
+   "fieldtype": "Link",
+   "label": "Batching Plant",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "tower",
+   "fieldtype": "Link",
+   "label": "Tower",
+   "options": "Structure"
+  },
+  {
+   "fieldname": "structure_location",
+   "fieldtype": "Link",
+   "label": "Structure/Location",
+   "options": "Address"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "CTR-.YYYY.-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_ybhh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "table_wuyt",
+   "fieldtype": "Table",
+   "label": "1 Day",
+   "options": "Cube Testing Register Item"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "3_days",
+   "fieldtype": "Table",
+   "label": "3 Days",
+   "options": "Cube Testing Register Item"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "7_days",
+   "fieldtype": "Table",
+   "label": "7 Days",
+   "options": "Cube Testing Register Item"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "28_days",
+   "fieldtype": "Table",
+   "label": "28 Days",
+   "options": "Cube Testing Register Item"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "56_days",
+   "fieldtype": "Table",
+   "label": "56 Days",
+   "options": "Cube Testing Register Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-17 19:55:16.274234",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Cube Testing Register",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

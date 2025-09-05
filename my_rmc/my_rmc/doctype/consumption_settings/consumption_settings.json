@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-18 12:41:58.305193",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "sql_server",
+  "db_driver",
+  "column_break_xceu",
+  "db_host",
+  "database",
+  "db_user",
+  "db_password",
+  "section_break_ausr",
+  "consumption_table_from",
+  "consumption_item_table_from",
+  "column_break_rjys",
+  "consumption_table_to",
+  "section_break_mexu",
+  "from_date",
+  "fetch_latest",
+  "column_break_kxxr",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "db_host",
+   "fieldtype": "Data",
+   "label": "DB Host"
+  },
+  {
+   "fieldname": "db_user",
+   "fieldtype": "Data",
+   "label": "DB User"
+  },
+  {
+   "fieldname": "db_password",
+   "fieldtype": "Data",
+   "label": "DB Password"
+  },
+  {
+   "fieldname": "database",
+   "fieldtype": "Data",
+   "label": "Database"
+  },
+  {
+   "fieldname": "column_break_xceu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "sql_server",
+   "fieldtype": "Check",
+   "label": "SQL Server"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "Stetter\nKYB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "db_driver",
+   "fieldtype": "Data",
+   "label": "DB Driver"
+  },
+  {
+   "fieldname": "section_break_ausr",
+   "fieldtype": "Section Break",
+   "label": "Table Settings"
+  },
+  {
+   "fieldname": "column_break_rjys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consumption_table_from",
+   "fieldtype": "Data",
+   "label": "Consumption Table From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consumption_table_to",
+   "fieldtype": "Data",
+   "label": "Consumption Table To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consumption_item_table_from",
+   "fieldtype": "Data",
+   "label": "Consumption Item Table From"
+  },
+  {
+   "fieldname": "section_break_mexu",
+   "fieldtype": "Section Break",
+   "label": "Filters"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_kxxr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "fetch_latest",
+   "fieldtype": "Check",
+   "label": "Fetch Latest "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-01 09:40:12.983453",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Consumption Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

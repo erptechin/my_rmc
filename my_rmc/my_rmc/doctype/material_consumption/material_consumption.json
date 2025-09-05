@@ -1,0 +1,268 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:batch_no",
+ "creation": "2024-09-19 20:41:48.290154",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "data_section",
+  "batch_no",
+  "batch_no_serial",
+  "batch_date",
+  "batch_end_time",
+  "cust_id",
+  "recipe_name",
+  "truck_id",
+  "prod_adj",
+  "driver_name",
+  "mixing_time",
+  "mixet_cap",
+  "consistancy",
+  "batch_size",
+  "sch_id",
+  "batch_end_time_txt",
+  "weighed_net_weight",
+  "bcp_flag",
+  "column_break_rjpd",
+  "batch_start_time",
+  "user_id",
+  "recipe_id",
+  "site",
+  "production_qty",
+  "ordered_qty",
+  "pre_mixing_time",
+  "strength",
+  "load_send_qty",
+  "order_id",
+  "batch_start_time_txt",
+  "v_print",
+  "weigh_bridge_stat",
+  "batch_c_flag",
+  "bt1_id",
+  "ds_flag",
+  "section_break_jlpc",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Batch No",
+   "options": "DO Data",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "data_section",
+   "fieldtype": "Section Break",
+   "label": "Data"
+  },
+  {
+   "fieldname": "batch_no_serial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Batch No Serial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "truck_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Truck_ID"
+  },
+  {
+   "fieldname": "column_break_rjpd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cust_id",
+   "fieldtype": "Data",
+   "label": "cust_id"
+  },
+  {
+   "fieldname": "batch_date",
+   "fieldtype": "Date",
+   "label": "batch_date"
+  },
+  {
+   "fieldname": "batch_start_time",
+   "fieldtype": "Datetime",
+   "label": "batch_start_time"
+  },
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "user_id"
+  },
+  {
+   "fieldname": "recipe_id",
+   "fieldtype": "Data",
+   "label": "recipe_id"
+  },
+  {
+   "fieldname": "batch_end_time",
+   "fieldtype": "Datetime",
+   "label": "batch_end_time"
+  },
+  {
+   "fieldname": "recipe_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "recipe_name"
+  },
+  {
+   "fieldname": "prod_adj",
+   "fieldtype": "Data",
+   "label": "Prod_Adj"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Data",
+   "label": "site"
+  },
+  {
+   "fieldname": "production_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Production_Qty"
+  },
+  {
+   "fieldname": "ordered_qty",
+   "fieldtype": "Data",
+   "label": "ordered_qty"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "driver_name"
+  },
+  {
+   "fieldname": "mixing_time",
+   "fieldtype": "Data",
+   "label": "mixing_time"
+  },
+  {
+   "fieldname": "mixet_cap",
+   "fieldtype": "Data",
+   "label": "mixet_cap"
+  },
+  {
+   "fieldname": "consistancy",
+   "fieldtype": "Data",
+   "label": "consistancy"
+  },
+  {
+   "fieldname": "batch_size",
+   "fieldtype": "Data",
+   "label": "batch_size"
+  },
+  {
+   "fieldname": "sch_id",
+   "fieldtype": "Data",
+   "label": "Sch_Id"
+  },
+  {
+   "fieldname": "batch_end_time_txt",
+   "fieldtype": "Time",
+   "label": "batch_end_time_txt"
+  },
+  {
+   "fieldname": "weighed_net_weight",
+   "fieldtype": "Data",
+   "label": "weighed_net_weight"
+  },
+  {
+   "fieldname": "bcp_flag",
+   "fieldtype": "Data",
+   "label": "BCP_Flag"
+  },
+  {
+   "fieldname": "ds_flag",
+   "fieldtype": "Data",
+   "label": "DS_Flag"
+  },
+  {
+   "fieldname": "pre_mixing_time",
+   "fieldtype": "Data",
+   "label": "pre_mixing_time"
+  },
+  {
+   "fieldname": "strength",
+   "fieldtype": "Data",
+   "label": "strength"
+  },
+  {
+   "fieldname": "load_send_qty",
+   "fieldtype": "Data",
+   "label": "load_send_qty"
+  },
+  {
+   "fieldname": "order_id",
+   "fieldtype": "Data",
+   "label": "Order_Id"
+  },
+  {
+   "fieldname": "batch_start_time_txt",
+   "fieldtype": "Time",
+   "label": "batch_start_time_txt"
+  },
+  {
+   "fieldname": "v_print",
+   "fieldtype": "Data",
+   "label": "v_Print"
+  },
+  {
+   "fieldname": "weigh_bridge_stat",
+   "fieldtype": "Data",
+   "label": "Weigh_bridge_stat"
+  },
+  {
+   "fieldname": "batch_c_flag",
+   "fieldtype": "Data",
+   "label": "Batch_C_Flag"
+  },
+  {
+   "fieldname": "bt1_id",
+   "fieldtype": "Data",
+   "label": "BT1_ID"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Material Consumption Item"
+  },
+  {
+   "fieldname": "section_break_jlpc",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-28 20:57:43.777482",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Material Consumption",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

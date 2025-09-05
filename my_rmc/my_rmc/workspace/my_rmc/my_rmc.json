@@ -1,0 +1,219 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Lb3o9D9e0w\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}},{\"id\":\"Z2A-27NJCG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Schedule\",\"col\":3}},{\"id\":\"r3kQHf_7dL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Challan\",\"col\":3}},{\"id\":\"dYIGXYuIz3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Plant Consumption\",\"col\":3}},{\"id\":\"qv0YWHKW6P\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Weight Bridge\",\"col\":3}},{\"id\":\"io2jp943qu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Consumption Settings\",\"col\":3}},{\"id\":\"HRxumpVEeN\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Batch Report\",\"col\":3}},{\"id\":\"bcJMD214K0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle Log Entry\",\"col\":3}},{\"id\":\"cRsLuZXAtT\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px; letter-spacing: 0.18px;\\\"><b>Dispatch</b></span>\",\"col\":12}},{\"id\":\"u7YId5z4pg\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Today Dispatch\",\"col\":3}},{\"id\":\"MrM3N_GvFR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Yesterday Dispatch\",\"col\":3}},{\"id\":\"hLXw3xMNdd\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"This Month Dispatch\",\"col\":3}},{\"id\":\"key3MSMtvB\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"This Year Dispatch\",\"col\":3}},{\"id\":\"UzpcH9zbOz\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Production Plan\",\"col\":4}},{\"id\":\"uGmF4MdK-b\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer_Site Assredd\",\"col\":4}},{\"id\":\"HmvyfwoZJ6\",\"type\":\"card\",\"data\":{\"card_name\":\"Master\",\"col\":4}}]",
+ "creation": "2024-03-12 00:20:56.016182",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "RMC",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer_Site Assredd",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Site Address",
+   "link_count": 0,
+   "link_to": "Address",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Quotation",
+   "link_count": 0,
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Recipe",
+   "link_count": 0,
+   "link_to": "Recipe",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "BOM",
+   "link_count": 0,
+   "link_to": "BOM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master",
+   "link_count": 3,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Driver",
+   "link_count": 0,
+   "link_to": "Driver",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle",
+   "link_count": 0,
+   "link_to": "Vehicle",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Pump Name",
+   "link_count": 0,
+   "link_to": "Pump Name",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-05-04 16:18:10.258258",
+ "modified_by": "Administrator",
+ "module": "My Rmc",
+ "name": "RMC",
+ "number_cards": [
+  {
+   "label": "Today Dispatch",
+   "number_card_name": "Today Dispatch"
+  },
+  {
+   "label": "Yesterday Dispatch",
+   "number_card_name": "Yesterday Dispatch"
+  },
+  {
+   "label": "This Month Dispatch",
+   "number_card_name": "This Month Dispatch"
+  },
+  {
+   "label": "This Year Dispatch",
+   "number_card_name": "This Year Dispatch"
+  }
+ ],
+ "owner": "test@admin.com",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Production Plan",
+   "label": "Production Plan",
+   "quick_list_filter": "[[\"Production Plan\",\"posting_date\",\"Timespan\",\"today\",false]]"
+  }
+ ],
+ "roles": [
+  {
+   "role": ""
+  }
+ ],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Sales Order",
+   "link_to": "Sales Order",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Batch Report",
+   "link_to": "Installation Note",
+   "stats_filter": "[[\"Installation Note\",\"inst_date\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Schedule",
+   "link_to": "Production Plan",
+   "stats_filter": "[[\"Production Plan\",\"posting_date\",\"Timespan\",\"today\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Consumption Settings",
+   "link_to": "Consumption Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle Log Entry",
+   "link_to": "Vehicle Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Report Builder",
+   "label": "Plant Consumption",
+   "link_to": "Plant Consumption",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Delivery Challan",
+   "link_to": "Delivery Note",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Weight Bridge",
+   "link_to": "Weight Bridge",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "RMC"
+}

@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-27 19:38:30.324700",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "gate_pass_type",
+  "column_break_uevz",
+  "date",
+  "time",
+  "column_break_sjco",
+  "company",
+  "branch",
+  "section_break_ufle",
+  "supplier",
+  "address",
+  "column_break_qikc",
+  "account",
+  "remarks",
+  "section_break_lspj",
+  "table_viqi",
+  "section_break_huqa",
+  "purchase_order_no",
+  "purchase_order_date",
+  "column_break_ikij",
+  "contact_person",
+  "phone_no",
+  "column_break_gbkf",
+  "gate_entry_no",
+  "gate_entry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "NRGP-.YYYY.-\nRGP-.YYYY.-"
+  },
+  {
+   "fieldname": "gate_pass_type",
+   "fieldtype": "Select",
+   "label": "Gate Pass Type",
+   "options": "Non-Returnable Gate Pass\nReturnable Gate Pass"
+  },
+  {
+   "fieldname": "column_break_uevz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "column_break_sjco",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_huqa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_ikij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_order_no",
+   "fieldtype": "Data",
+   "label": "Purchase Order No"
+  },
+  {
+   "fieldname": "purchase_order_date",
+   "fieldtype": "Date",
+   "label": "Purchase Order Date"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "section_break_lspj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_viqi",
+   "fieldtype": "Table",
+   "options": "Gate Pass Item"
+  },
+  {
+   "fieldname": "section_break_ufle",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qikc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "label": "Phone No"
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Select",
+   "label": "Account",
+   "options": "Non-Billable\nBillable"
+  },
+  {
+   "fieldname": "column_break_gbkf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gate_entry_no",
+   "fieldtype": "Data",
+   "label": "Gate Entry No"
+  },
+  {
+   "fieldname": "gate_entry_date",
+   "fieldtype": "Datetime",
+   "label": "Gate Entry date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-03-10 16:28:00.692358",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Gate Pass",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,173 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-26 01:44:18.891486",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pour_card_no",
+  "column_break_eefs",
+  "date",
+  "pour_details",
+  "column_break_kwoo",
+  "branch",
+  "customer",
+  "column_break_nefj",
+  "company",
+  "site",
+  "section_break_fylp",
+  "tower",
+  "floor",
+  "column_break_ffkz",
+  "grid_no",
+  "flat_no",
+  "column_break_gtuo",
+  "slab_level",
+  "wallcolumn_level",
+  "section_break_rpmx",
+  "pour_card_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PUR-.YYYY.-"
+  },
+  {
+   "fieldname": "pour_card_no",
+   "fieldtype": "Data",
+   "label": "Pour Card No"
+  },
+  {
+   "fieldname": "column_break_eefs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "pour_details",
+   "fieldtype": "Select",
+   "label": "Pour Details",
+   "options": "DUMPING\nLINE PUMP\nSPB\nBOOM PLACER"
+  },
+  {
+   "fieldname": "column_break_kwoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_rpmx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pour_card_item",
+   "fieldtype": "Table",
+   "label": "Pour Card Item",
+   "options": "Pour Card Item"
+  },
+  {
+   "fieldname": "section_break_fylp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tower",
+   "fieldtype": "Link",
+   "label": "Tower",
+   "options": "Structure"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Link",
+   "label": "Floor",
+   "options": "Floor"
+  },
+  {
+   "fieldname": "flat_no",
+   "fieldtype": "Link",
+   "label": "Flat No",
+   "options": "Flat No"
+  },
+  {
+   "fieldname": "column_break_ffkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grid_no",
+   "fieldtype": "Data",
+   "label": "GRID No"
+  },
+  {
+   "fieldname": "slab_level",
+   "fieldtype": "Data",
+   "label": "Slab Level"
+  },
+  {
+   "fieldname": "wallcolumn_level",
+   "fieldtype": "Data",
+   "label": "Wall/Column level"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_nefj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gtuo",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-17 19:55:16.570611",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Pour Card",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

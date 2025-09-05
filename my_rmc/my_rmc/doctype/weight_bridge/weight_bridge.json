@@ -1,0 +1,297 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-09-11 00:13:30.005595",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "column_break_utzl",
+  "date",
+  "column_break_ewwb",
+  "display_data",
+  "column_break_bwnp",
+  "wbslip_type",
+  "company",
+  "section_break_inward",
+  "purchase_order",
+  "column_break_gupk",
+  "supplier_name",
+  "column_break_bxie",
+  "vehicle_no",
+  "column_break_ghlr",
+  "transporter",
+  "column_break_axhz",
+  "ref_no",
+  "section_break_outward",
+  "delivery_note",
+  "column_break_woxk",
+  "customer_name",
+  "column_break_siis",
+  "vehicle",
+  "section_break_ypif",
+  "item",
+  "deduct_reason",
+  "column_break_java",
+  "gross_weight_date_time",
+  "tare_weight_date_time",
+  "column_break_alwr",
+  "gross_weight",
+  "tare_weight",
+  "net_weight",
+  "column_break_tdxc",
+  "deduct",
+  "grand_net_weight",
+  "column_break_omeb",
+  "gross",
+  "tare",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_utzl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "display_data",
+   "fieldtype": "Data",
+   "label": "Display Data"
+  },
+  {
+   "fieldname": "wbslip_type",
+   "fieldtype": "Select",
+   "label": "WBSlip Type",
+   "options": "Inward\nOutward\nOther"
+  },
+  {
+   "fieldname": "column_break_bwnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "column_break_woxk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bxie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "label": "Delivery Note",
+   "options": "Delivery Note"
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Link",
+   "label": "Supplier Name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "transporter",
+   "fieldtype": "Link",
+   "label": "Transporter",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_ewwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deduct_reason",
+   "fieldtype": "Select",
+   "label": "Deduct Reason",
+   "options": "Select\nMoisture\nBad Quality"
+  },
+  {
+   "fieldname": "section_break_ypif",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gross_weight_date_time",
+   "fieldtype": "Datetime",
+   "label": "Gross Weight Date Time"
+  },
+  {
+   "fieldname": "tare_weight_date_time",
+   "fieldtype": "Datetime",
+   "label": "Tare Weight Date Time"
+  },
+  {
+   "fieldname": "grand_net_weight",
+   "fieldtype": "Data",
+   "label": "Grand Net Weight"
+  },
+  {
+   "fieldname": "column_break_alwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gross Weight"
+  },
+  {
+   "fieldname": "tare_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tare Weight"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Net Weight"
+  },
+  {
+   "fieldname": "column_break_omeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gross",
+   "fieldtype": "Button",
+   "label": "Gross"
+  },
+  {
+   "fieldname": "tare",
+   "fieldtype": "Button",
+   "label": "Tare"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "WB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "label": "Vehicle No"
+  },
+  {
+   "fieldname": "column_break_gupk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Ref No"
+  },
+  {
+   "fieldname": "column_break_java",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Weight Bridge",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_siis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tdxc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ghlr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_axhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_inward",
+   "fieldtype": "Section Break",
+   "label": "Inward"
+  },
+  {
+   "fieldname": "section_break_outward",
+   "fieldtype": "Section Break",
+   "label": "Outward"
+  },
+  {
+   "fieldname": "deduct",
+   "fieldtype": "Float",
+   "label": "Deduct %"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-19 19:13:35.438182",
+ "modified_by": "Administrator",
+ "module": "My RMC",
+ "name": "Weight Bridge",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
