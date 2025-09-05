@@ -91,16 +91,6 @@
         "name": "Customer-custom_branch"
     },
     {
-        "dt": "Customer",
-        "doctype": "Custom Field",
-        "fieldname": "customer_site_addresses",
-        "fieldtype": "Table",
-        "insert_after": "custom_branch",
-        "label": "Customer Site Addresses",
-        "name": "Customer-customer_site_addresses",
-        "options": "Customer Site Addresses"
-    },
-    {
         "dt": "Address",
         "doctype": "Custom Field",
         "fieldname": "custom_branch",
