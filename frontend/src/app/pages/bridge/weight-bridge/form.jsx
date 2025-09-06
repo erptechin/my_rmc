@@ -17,7 +17,7 @@ import { useWeightBridge } from "hooks/useWeightBridge";
 const pageName = "Weight Bridge";
 const doctype = "Weight Bridge";
 const fields = [
-  'naming_series', 'date', 'display_data', 'wbslip_type', 'company',
+  'date', 'display_data', 'wbslip_type', 'company',
   'purchase_order', 'supplier_name', 'vehicle_no', 'transporter', 'ref_no',
   'delivery_note', 'customer_name', 'vehicle', 'item', 'deduct_reason',
   'gross_weight_date_time', 'tare_weight_date_time', 'gross_weight', 
@@ -35,6 +35,10 @@ const tableFields = {
 const initialState = Object.fromEntries(
   [...fields, ...subFields].map(field => [field, ""])
 );
+
+// Set default values for specific fields
+initialState.wbslip_type = "Inward";
+initialState.date = new Date().toISOString().split('T')[0]; // Current date in YYYY-MM-DD format
 
 export default function AddEditFrom() {
   const { isDark, darkColorScheme, lightColorScheme } = useThemeContext();
@@ -67,8 +71,15 @@ export default function AddEditFrom() {
     watch,
   } = useForm({
     resolver: yupResolver(Schema(info?.fields)),
-    values: id ? data : initialState,
+    defaultValues: id ? data : initialState,
   });
+
+  // Reset form when data changes (for editing)
+  useEffect(() => {
+    if (data && id) {
+      reset(data);
+    }
+  }, [data, id, reset]);
 
   // Watch form fields after control is initialized
   const wbslipType = useWatch({ control, name: "wbslip_type" });
@@ -143,6 +154,18 @@ export default function AddEditFrom() {
   useEffect(() => {
     handleWBSlipTypeChange(wbslipType);
   }, [wbslipType, handleWBSlipTypeChange]);
+
+  // Initialize with default values for new records
+  useEffect(() => {
+    if (!id) {
+      if (!wbslipType) {
+        setValue('wbslip_type', 'Inward');
+      }
+      if (!watch('date')) {
+        setValue('date', new Date().toISOString().split('T')[0]);
+      }
+    }
+  }, [id, wbslipType, setValue, watch]);
 
   // Handle gross weight button click (matching doctype logic)
   const onGrossWeight = () => {
@@ -221,25 +244,8 @@ export default function AddEditFrom() {
           id="new-post-form"
         >
           <Card className="p-6">
-            {/* Header Section - 4 fields in a row */}
-            <div className="grid grid-cols-4 gap-4 mb-6">
-              <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">
-                  Series <span className="text-red-500">*</span>
-                </label>
-                <Controller
-                  name="naming_series"
-                  control={control}
-                  render={({ field }) => (
-                    <Select
-                      {...field}
-                      className="w-full"
-                      options={[{ label: "WB", value: "WB" }]}
-                      placeholder="Select Series"
-                    />
-                  )}
-                />
-              </div>
+            {/* Header Section - 3 fields in a row */}
+            <div className="grid grid-cols-3 gap-4 mb-6">
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-700">Date</label>
                 <Input
@@ -269,18 +275,20 @@ export default function AddEditFrom() {
                 <Controller
                   name="wbslip_type"
                   control={control}
-                  render={({ field }) => (
-                    <Select
-                      {...field}
-                      className="w-full"
-                      options={[
-                        { label: "Inward", value: "Inward" },
-                        { label: "Outward", value: "Outward" },
-                        { label: "Other", value: "Other" }
-                      ]}
-                      placeholder="Select Type"
-                    />
-                  )}
+                  render={({ field }) => {
+                    console.log('WBSlip Type field:', field);
+                    return (
+                      <select
+                        {...field}
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      >
+                        <option value="">Select Type</option>
+                        <option value="Inward">Inward</option>
+                        <option value="Outward">Outward</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    );
+                  }}
                 />
               </div>
             </div>

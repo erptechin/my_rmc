@@ -16,7 +16,7 @@ export default function ListData() {
   useEffect(() => {
     if (info?.fields) {
       const fieldnames = info?.fields.map(field => field.fieldname);
-      setSearch(prev => ({ ...prev, fields: JSON.stringify([...fieldnames, "name"]) }));
+      setSearch(prev => ({ ...prev, fields: JSON.stringify(fields) }));
     }
   }, [info]);
 

@@ -150,6 +150,12 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
         setIsGrossDisabled(false);
         setIsTareDisabled(false);
       }
+    } else {
+      // Default to Inward when no value is set
+      setShowInward(true);
+      setShowOutward(false);
+      setIsGrossDisabled(false);
+      setIsTareDisabled(true);
     }
   };
 
