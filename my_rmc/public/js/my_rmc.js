@@ -1,4 +1,31 @@
 frappe.provide("frappe.search");
+frappe.provide("frappe.ui.form");
+
+(function() {
+  // Override frappe.utils.scroll_to immediately
+  if (window.frappe && frappe.utils) {
+      frappe.utils.scroll_to = function() {};
+  }
+  
+  // Add CSS to prevent smooth scrolling
+  const style = document.createElement('style');
+  style.textContent = `
+      .frappe-control .grid-body,
+      .form-grid .grid-body,
+      .grid-wrapper {
+          scroll-behavior: auto !important;
+      }
+      
+      /* Prevent any scroll animations */
+      * {
+          scroll-behavior: auto !important;
+      }
+  `;
+  document.head.appendChild(style);
+  
+  // Override Element.prototype.scrollIntoView immediately
+  Element.prototype.scrollIntoView = function() {};
+})();
 
 $(document).ready(async () => {
 

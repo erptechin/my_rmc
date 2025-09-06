@@ -539,6 +539,36 @@ const protectedRoutes = {
             },
           ]
         },
+        {
+          path: "bridge",
+          children: [
+            {
+              index: true,
+              element: <Navigate to="/bridge/weight-bridge" />,
+            },
+            {
+              path: "weight-bridge",
+              lazy: async () => ({
+                Component: (await import("app/pages/bridge/weight-bridge"))
+                  .default,
+              }),
+            },
+            {
+              path: "weight-bridge/add-new",
+              lazy: async () => ({
+                Component: (await import("app/pages/bridge/weight-bridge/form"))
+                  .default,
+              }),
+            },
+            {
+              path: "weight-bridge/edit/:id",
+              lazy: async () => ({
+                Component: (await import("app/pages/bridge/weight-bridge/form"))
+                  .default,
+              }),
+            },
+          ]
+        },
       ]
     },
     {

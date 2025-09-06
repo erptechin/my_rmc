@@ -22,14 +22,14 @@ export const sales = {
             transKey: 'nav.sales.customer',
             Icon: StatisticIcon,
         },
-        {
-            id: 'sales.site',
-            path: path(ROOT_MASTERS, '/site'),
-            type: NAV_TYPE_ITEM,
-            title: 'Site',
-            transKey: 'nav.sales.site',
-            Icon: StatisticIcon,
-        },
+        // {
+        //     id: 'sales.site',
+        //     path: path(ROOT_MASTERS, '/site'),
+        //     type: NAV_TYPE_ITEM,
+        //     title: 'Site',
+        //     transKey: 'nav.sales.site',
+        //     Icon: StatisticIcon,
+        // },
         {
             id: 'sales.quotation',
             path: path(ROOT_MASTERS, '/quotation'),

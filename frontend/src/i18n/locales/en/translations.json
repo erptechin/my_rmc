@@ -45,6 +45,10 @@
       "expense-claim": "Expense Claim",
       "leave-application": "Leave Application"
     },
+    "bridge": {
+      "bridge": "Bridge",
+      "weight-bridge": "Weight Bridge"
+    },
     "settings": {
       "settings": "Settings",
       "general": "General",

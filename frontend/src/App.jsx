@@ -11,7 +11,17 @@ import { ThemeProvider } from "app/contexts/theme/Provider";
 import router from "app/router/router";
 import InstallPrompt from './InstallPrompt';
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 5 * 60 * 1000, // 5 minutes - data is considered fresh for 5 minutes
+      gcTime: 10 * 60 * 1000, // 10 minutes - cache garbage collection time (formerly cacheTime)
+      refetchOnWindowFocus: false, // Don't refetch when window regains focus
+      refetchOnReconnect: true, // Refetch when reconnecting to network
+      retry: 1, // Only retry once on failure
+    },
+  },
+});
 
 // ----------------------------------------------------------------------
 
