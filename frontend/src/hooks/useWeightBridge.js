@@ -9,7 +9,7 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
   const [showOutward, setShowOutward] = useState(false);
   const [itemOptions, setItemOptions] = useState([]);
   const [isNewRecord, setIsNewRecord] = useState(!id);
-  const [displayData, setDisplayData] = useState("127");
+  const [displayData, setDisplayData] = useState("");
   const [isWeighScaleEnabled, setIsWeighScaleEnabled] = useState(false);
   const [serialPort, setSerialPort] = useState(null);
 
@@ -69,12 +69,14 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
 
   // Initialize weigh scale connection
   useEffect(() => {
+    let testInterval = null;
+    
     const initializeWeighScale = async () => {
       if (!id || id.includes("new-weight-bridge")) {
         setIsWeighScaleEnabled(true);
         
         // TEST START - random values every 5 seconds (matching doctype exactly)
-        const testInterval = setInterval(() => {
+        testInterval = setInterval(() => {
           setDisplayData(Math.floor(Math.random() * (900 - 100 + 1)) + 100);
         }, 5000);
         // TEST END
@@ -94,7 +96,9 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
               setSerialPort(ports[0]);
               await listenToPort(ports[0], rmcSettings);
             }
-            clearInterval(testInterval);
+            if (testInterval) {
+              clearInterval(testInterval);
+            }
           } catch (error) {
             console.log("Serial port connection failed, using test mode:", error);
           }
@@ -105,6 +109,13 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
     };
     
     initializeWeighScale();
+    
+    // Cleanup function to clear interval on unmount or dependency change
+    return () => {
+      if (testInterval) {
+        clearInterval(testInterval);
+      }
+    };
   }, [id, rmcSettings]);
 
   // Cleanup serial port connection on unmount

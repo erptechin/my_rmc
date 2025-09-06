@@ -254,7 +254,7 @@ export default function AddEditFrom() {
                   <Input
                     value={displayData}
                     className="w-full bg-purple-50 text-center text-lg font-mono font-bold"
-                    placeholder="127"
+                    placeholder=""
                     readOnly
                   />
                   {isWeighScaleEnabled && (
