@@ -4,7 +4,7 @@ import { useInfo, useFeachData } from "hooks/useApiHook";
 
 const pageName = "Weight Bridge List";
 const doctype = "Weight Bridge";
-const fields = ['wbslip_type', 'supplier_name', 'customer_name', 'vehicle_no', 'gross_weight', 'tare_weight', 'net_weight'];
+const fields = ['wbslip_type', 'supplier_name', 'customer_name', 'vehicle_no', 'net_weight'];
 
 export default function ListData() {
   const [orders, setOrders] = useState([]);
@@ -16,7 +16,7 @@ export default function ListData() {
   useEffect(() => {
     if (info?.fields) {
       const fieldnames = info?.fields.map(field => field.fieldname);
-      setSearch(prev => ({ ...prev, fields: JSON.stringify(fields) }));
+      setSearch(prev => ({ ...prev, fields: JSON.stringify([...fieldnames, "name"]) }));
     }
   }, [info]);
 

@@ -14,24 +14,24 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
   const [serialPort, setSerialPort] = useState(null);
 
   // Get RMC Settings using hooks
-  const { data: rmcSettings } = useFeachSingle({ 
-    doctype: "RMC Settings", 
-    id: "enable_weigh_scale", 
+  const { data: rmcSettings } = useFeachSingle({
+    doctype: "RMC Settings",
+    id: "enable_weigh_scale",
     fields: JSON.stringify(["enable_weigh_scale", "baud_rate", "split_character"])
   });
 
   // Get purchase order data using hooks
-  const { data: purchaseOrderData } = useFeachSingle({ 
-    doctype: "Purchase Order", 
-    id: purchaseOrder, 
+  const { data: purchaseOrderData } = useFeachSingle({
+    doctype: "Purchase Order",
+    id: purchaseOrder,
     fields: JSON.stringify(["supplier_name"]),
     enabled: !!purchaseOrder
   });
 
   // Get delivery note data using hooks
-  const { data: deliveryNoteData } = useFeachSingle({ 
-    doctype: "Delivery Note", 
-    id: deliveryNote, 
+  const { data: deliveryNoteData } = useFeachSingle({
+    doctype: "Delivery Note",
+    id: deliveryNote,
     fields: JSON.stringify(["customer", "custom_vehicle"]),
     enabled: !!deliveryNote
   });
@@ -41,7 +41,7 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
     const textDecoder = new TextDecoderStream();
     const readableStreamClosed = port.readable.pipeTo(textDecoder.writable);
     const reader = textDecoder.readable.getReader();
-    
+
     let tempValue = 0;
     while (true) {
       try {
@@ -50,12 +50,12 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
           reader.releaseLock();
           break;
         }
-        
+
         // Process the data (matching doctype logic)
-        let newValue = String(value).includes(settings.split_character) 
-          ? String(value).replace(settings.split_character, "") 
+        let newValue = String(value).includes(settings.split_character)
+          ? String(value).replace(settings.split_character, "")
           : String(value);
-          
+
         if (tempValue !== Number(newValue)) {
           tempValue = Number(newValue);
           setDisplayData(String(Number(newValue)));
@@ -70,46 +70,46 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
   // Initialize weigh scale connection
   useEffect(() => {
     let testInterval = null;
-    
+
     const initializeWeighScale = async () => {
-      if (!id || id.includes("new-weight-bridge")) {
-        setIsWeighScaleEnabled(true);
-        
-        // TEST START - random values every 5 seconds (matching doctype exactly)
-        testInterval = setInterval(() => {
-          setDisplayData(Math.floor(Math.random() * (900 - 100 + 1)) + 100);
-        }, 5000);
-        // TEST END
-        
-        // Check for serial port support
-        if ("serial" in navigator && rmcSettings) {
-          try {
-            const ports = await navigator.serial.getPorts();
-            if (ports.length === 0) {
-              // Request permission to connect to weigh device
-              const port = await navigator.serial.requestPort();
-              await port.open({ baudRate: Number(rmcSettings.baud_rate) });
-              setSerialPort(port);
-              await listenToPort(port, rmcSettings);
-            } else {
-              await ports[0].open({ baudRate: Number(rmcSettings.message.baud_rate) });
-              setSerialPort(ports[0]);
-              await listenToPort(ports[0], rmcSettings);
-            }
-            if (testInterval) {
-              clearInterval(testInterval);
-            }
-          } catch (error) {
-            console.log("Serial port connection failed, using test mode:", error);
+
+      setIsWeighScaleEnabled(true);
+
+      // TEST START - random values every 5 seconds (matching doctype exactly)
+      testInterval = setInterval(() => {
+        setDisplayData(Math.floor(Math.random() * (900 - 100 + 1)) + 100);
+      }, 5000);
+      // TEST END
+
+      // Check for serial port support
+      if ("serial" in navigator && rmcSettings) {
+        try {
+          const ports = await navigator.serial.getPorts();
+          if (ports.length === 0) {
+            // Request permission to connect to weigh device
+            const port = await navigator.serial.requestPort();
+            await port.open({ baudRate: Number(rmcSettings.baud_rate) });
+            setSerialPort(port);
+            await listenToPort(port, rmcSettings);
+          } else {
+            await ports[0].open({ baudRate: Number(rmcSettings.message.baud_rate) });
+            setSerialPort(ports[0]);
+            await listenToPort(ports[0], rmcSettings);
           }
-        } else {
-          console.log("Browser does not support serial device connection");
+          if (testInterval) {
+            clearInterval(testInterval);
+          }
+        } catch (error) {
+          console.log("Serial port connection failed, using test mode:", error);
         }
+      } else {
+        console.log("Browser does not support serial device connection");
       }
+
     };
-    
+
     initializeWeighScale();
-    
+
     // Cleanup function to clear interval on unmount or dependency change
     return () => {
       if (testInterval) {
@@ -182,7 +182,7 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
     if (grossWeight && tareWeight) {
       const netWeight = parseFloat(grossWeight) - parseFloat(tareWeight);
       setValue('net_weight', netWeight.toString());
-      
+
       const grandNetDeduct = (parseFloat(deduct) || 0) / 100 * netWeight;
       setValue('grand_net_weight', (netWeight - grandNetDeduct).toString());
     }
@@ -199,12 +199,12 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
     displayData,
     isWeighScaleEnabled,
     serialPort,
-    
+
     // Data
     rmcSettings,
     purchaseOrderData,
     deliveryNoteData,
-    
+
     // Actions
     handleWBSlipTypeChange,
     handleGrossWeight,
