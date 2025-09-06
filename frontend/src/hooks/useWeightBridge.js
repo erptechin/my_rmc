@@ -76,9 +76,9 @@ export const useWeightBridge = (id, purchaseOrder, deliveryNote) => {
       setIsWeighScaleEnabled(true);
 
       // TEST START - random values every 5 seconds (matching doctype exactly)
-      testInterval = setInterval(() => {
-        setDisplayData(Math.floor(Math.random() * (900 - 100 + 1)) + 100);
-      }, 5000);
+      // testInterval = setInterval(() => {
+      //   setDisplayData(Math.floor(Math.random() * (900 - 100 + 1)) + 100);
+      // }, 5000);
       // TEST END
 
       // Check for serial port support

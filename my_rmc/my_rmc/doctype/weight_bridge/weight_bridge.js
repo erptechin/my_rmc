@@ -31,10 +31,10 @@ frappe.ui.form.on("Weight Bridge", {
             if (doc.enable_weigh_scale == 1) {
 
                 // TEST START
-                const outputDiv = document.querySelector('input[data-fieldname="display_data"]');
-                setInterval(() => {
-                    outputDiv.value = Math.floor(Math.random() * (900 - 100 + 1)) + 100;
-                }, 5000)
+                // const outputDiv = document.querySelector('input[data-fieldname="display_data"]');
+                // setInterval(() => {
+                //     outputDiv.value = Math.floor(Math.random() * (900 - 100 + 1)) + 100;
+                // }, 5000)
                 // TEST END
 
                 if ("serial" in navigator) {
